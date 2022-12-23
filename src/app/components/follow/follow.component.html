@@ -1,0 +1,10 @@
+<div class="social">
+  <h2>Follow:</h2>
+  <ul>
+    <li *ngFor="let follow of follows">
+      <a href="{{ follow.link }}"
+        ><span title="{{ follow.title }}">{{ follow.icon }}</span></a
+      >
+    </li>
+  </ul>
+</div>

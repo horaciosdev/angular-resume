@@ -3,16 +3,38 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { MainContentComponent } from './components/main-content/main-content.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PhotoComponent } from './components/photo/photo.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { SocialComponent } from './components/follow/follow.component';
+import { EducationComponent } from './components/education/education.component';
+import { ProgrammingSkillsComponent } from './components/programming-skills/programming-skills.component';
+import { SoftwareSkillsComponent } from './components/software-skills/software-skills.component';
+import { InterestsComponent } from './components/interests/interests.component';
+import { ResumeComponent } from './components/resume/resume.component';
+import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidebarComponent,
+    MainContentComponent,
+    PhotoComponent,
+    AboutComponent,
+    ContactComponent,
+    SocialComponent,
+    EducationComponent,
+    ProgrammingSkillsComponent,
+    SoftwareSkillsComponent,
+    InterestsComponent,
+    ResumeComponent,
+    WorkExperienceComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

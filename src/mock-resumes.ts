@@ -58,11 +58,11 @@ export const RESUMES: Resume[] = [
       },
     ],
     programmingSkills: [
-      { icon: 'icon', language: 'HTML', level: 90 },
-      { icon: 'icon', language: 'CSS', level: 90 },
-      { icon: 'icon', language: 'JavaScript', level: 90 },
-      { icon: 'icon', language: 'Angular', level: 90 },
-      { icon: 'icon', language: 'PHP', level: 90 },
+      { icon: 'html', language: 'HTML', level: 90 },
+      { icon: 'github', language: 'CSS', level: 90 },
+      { icon: 'javacript', language: 'JavaScript', level: 90 },
+      { icon: 'angular', language: 'Angular', level: 90 },
+      { icon: 'php', language: 'PHP', level: 90 },
     ],
     softwareSkills: [
       { icon: 'icon', software: 'Photoshop', level: 60 },

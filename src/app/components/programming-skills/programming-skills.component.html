@@ -3,7 +3,8 @@
   <ul>
     <li *ngFor="let programmingSkill of programmingSkills">
       <span
-        >{{ programmingSkill.icon }} {{ programmingSkill.language }}
+        ><app-icon [iconName]="programmingSkill.icon"></app-icon>
+        {{ programmingSkill.language }}
         {{ programmingSkill.level }}</span
       >
     </li>

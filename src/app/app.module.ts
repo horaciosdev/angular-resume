@@ -16,6 +16,7 @@ import { SoftwareSkillsComponent } from './components/software-skills/software-s
 import { InterestsComponent } from './components/interests/interests.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
+import { IconComponent } from './components/icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { WorkExperienceComponent } from './components/work-experience/work-exper
     InterestsComponent,
     ResumeComponent,
     WorkExperienceComponent,
+    IconComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

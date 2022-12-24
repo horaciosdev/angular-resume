@@ -3,7 +3,8 @@
   <ul>
     <li *ngFor="let software of softwareSkills">
       <span
-        >{{ software.icon }} {{ software.software }} {{ software.level }}</span
+        ><app-icon [iconName]="software.icon"></app-icon>
+        {{ software.software }} {{ software.level }}</span
       >
     </li>
   </ul>

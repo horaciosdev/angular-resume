@@ -11,9 +11,9 @@ export const RESUMES: Resume[] = [
       'Sou um cara legal, amet consectetur adipisicing elit. Rerum distinctio porro consectetur debitis accusamus consequuntur natus, quibusdam repellat placeat ipsum facilis sunt expedita facere, dicta incidunt? Autem molestiae temporibus vel.',
     contacts: [
       {
-        icon: 'icon',
-        title: '',
-        contact: '(51) 9-84041938',
+        icon: 'whatsapp',
+        title: 'whatsapp',
+        contact: '+55 (51) 98404-1938',
       },
       {
         icon: 'icon',
@@ -59,17 +59,22 @@ export const RESUMES: Resume[] = [
     ],
     programmingSkills: [
       { icon: 'html', language: 'HTML', level: 90 },
-      { icon: 'github', language: 'CSS', level: 90 },
+      { icon: 'css', language: 'CSS', level: 90 },
+      { icon: 'sass', language: 'SASS / SCSS', level: 90 },
       { icon: 'javacript', language: 'JavaScript', level: 90 },
+      { icon: 'typescript', language: 'TypeScript', level: 90 },
+      { icon: 'jquery', language: 'jQuery', level: 90 },
+      { icon: 'react', language: 'REACT', level: 90 },
       { icon: 'angular', language: 'Angular', level: 90 },
       { icon: 'php', language: 'PHP', level: 90 },
+      { icon: 'mysql', language: 'MySQL', level: 90 },
     ],
     softwareSkills: [
-      { icon: 'icon', software: 'Photoshop', level: 60 },
-      { icon: 'icon', software: 'Photoshop', level: 60 },
-      { icon: 'icon', software: 'Photoshop', level: 60 },
-      { icon: 'icon', software: 'Photoshop', level: 60 },
-      { icon: 'icon', software: 'Photoshop', level: 60 },
+      { icon: 'vscode', software: 'VS Code', level: 60 },
+      { icon: 'photoshop', software: 'Photoshop', level: 60 },
+      { icon: 'blender', software: 'Blender', level: 60 },
+      { icon: 'inkscape', software: 'Inkscape', level: 60 },
+      { icon: 'lmms', software: 'LMMS', level: 60 },
     ],
     interests: [
       { icon: 'icon', interest: 'Draw' },

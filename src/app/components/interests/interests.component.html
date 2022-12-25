@@ -1,8 +1,13 @@
 <div class="interests">
-  <h2><span>ICON:</span> Interests</h2>
+  <h2>
+    <span><app-icon [iconName]="'star'"></app-icon></span> Interests
+  </h2>
   <ul>
     <li *ngFor="let interest of interests">
-      <span>{{ interest.icon }} {{ interest.interest }}</span>
+      <span>
+        <app-icon [iconName]="interest.icon"></app-icon
+        >{{ interest.interest }}</span
+      >
     </li>
   </ul>
 </div>

@@ -1,5 +1,5 @@
 <div class="work-experience">
-  <h2><span>ICON:</span> Work Experience</h2>
+  <h2><span><app-icon [iconName]="'suitcase'"></app-icon></span> Work Experience</h2>
   <ul *ngFor="let workExperience of workExperiences">
     <li>{{ workExperience.company }} {{ workExperience.period }}</li>
   </ul>

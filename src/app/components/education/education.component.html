@@ -1,5 +1,5 @@
 <div class="education">
-  <h2><span>ICON:</span> Education</h2>
+  <h2><span><app-icon [iconName]="'education'"></app-icon></span> Education</h2>
   <ul>
     <li *ngFor="let education of educationArr">
       {{ education.institution }}: {{ education.course }} {{ education.period }}

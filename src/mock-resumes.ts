@@ -12,28 +12,36 @@ export const RESUMES: Resume[] = [
     contacts: [
       {
         icon: 'whatsapp',
-        title: 'whatsapp',
+        title: 'Whatsapp',
         contact: '+55 (51) 98404-1938',
       },
       {
-        icon: 'icon',
-        title: '',
-        contact: '(51) 9-84041938',
+        icon: 'email',
+        title: 'Email',
+        contact: 'horacio.schumann@gmail.com',
       },
       {
-        icon: 'icon',
-        title: '',
-        contact: '(51) 9-84041938',
+        icon: 'location',
+        title: 'Location',
+        contact: 'Porto Alegre/RS',
       },
     ],
     follows: [
-      { icon: 'icon', title: 'github', link: 'https://github.com/horaciosdev' },
       {
-        icon: 'Licon',
-        title: 'linkedin',
+        icon: 'github',
+        title: 'Github',
+        link: 'https://github.com/horaciosdev',
+      },
+      {
+        icon: 'linkedin',
+        title: 'Linkedin',
         link: 'https://www.linkedin.com/in/horaciosdev/',
       },
-      { icon: 'icon', title: 'github', link: 'https://github.com/horaciosdev' },
+      {
+        icon: 'instagram',
+        title: 'Instagram',
+        link: 'https://www.instagram.com/bagreheads/',
+      },
     ],
     workExperiences: [
       { company: 'Update', period: '2010-2015' },
@@ -77,11 +85,12 @@ export const RESUMES: Resume[] = [
       { icon: 'lmms', software: 'LMMS', level: 60 },
     ],
     interests: [
-      { icon: 'icon', interest: 'Draw' },
-      { icon: 'icon', interest: 'Draw' },
-      { icon: 'icon', interest: 'Draw' },
-      { icon: 'icon', interest: 'Draw' },
-      { icon: 'icon', interest: 'Draw' },
+      { icon: 'brush', interest: '2D Art' },
+      { icon: 'cube', interest: '3D Art' },
+      { icon: 'pcmusic', interest: 'Music / SFX' },
+      { icon: 'joystick', interest: 'Game Dev' },
+      { icon: 'camera', interest: 'Photography' },
+      { icon: 'phi', interest: 'Philosophy' },
     ],
   },
 ];

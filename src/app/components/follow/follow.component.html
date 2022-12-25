@@ -3,8 +3,9 @@
   <ul>
     <li *ngFor="let follow of follows">
       <a href="{{ follow.link }}"
-        ><span title="{{ follow.title }}">{{ follow.icon }}</span></a
-      >
+        ><span title="{{ follow.title }}"
+          ><app-icon [iconName]="follow.icon"></app-icon></span
+      ></a>
     </li>
   </ul>
 </div>

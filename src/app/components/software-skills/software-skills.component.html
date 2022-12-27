@@ -1,7 +1,5 @@
-<div class="software-skills">
-  <h2>
-    <span><app-icon [iconName]="'software'"></app-icon></span> Software Skills
-  </h2>
+<div class="software-skills container-card">
+  <app-card-header [iconName]="'software'" title="Software Skills"></app-card-header>
   <ul>
     <li *ngFor="let software of softwareSkills">
       <span

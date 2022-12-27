@@ -1,7 +1,5 @@
-<div class="interests">
-  <h2>
-    <span><app-icon [iconName]="'star'"></app-icon></span> Interests
-  </h2>
+<div class="interests container-card">
+  <app-card-header [iconName]="'star'" title="Interests"></app-card-header>
   <ul>
     <li *ngFor="let interest of interests">
       <span>

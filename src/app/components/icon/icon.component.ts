@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 import { IconService } from 'src/app/services/icon.service';
+import { Icon } from '../Icon';
 
 @Component({
   selector: 'app-icon',
@@ -9,15 +9,17 @@ import { IconService } from 'src/app/services/icon.service';
 })
 export class IconComponent {
   @Input() iconName: string = '';
+  icon!: Icon;
 
-  constructor(
-    private domSanitizer: DomSanitizer,
-    private iconService: IconService
-  ) {}
+  constructor(private iconService: IconService) {}
+
+  ngOnInit(): void {
+    this.getIcon();
+  }
 
   getIcon() {
-    return this.domSanitizer.bypassSecurityTrustHtml(
-      this.iconService.getIcon(this.iconName)
-    );
+    return this.iconService
+      .getIcon(this.iconName)
+      .subscribe((icon) => (this.icon = icon));
   }
 }

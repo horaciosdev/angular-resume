@@ -1,11 +1,12 @@
-<div class="social">
+<div class="social container-card">
   <h2>Follow:</h2>
-  <ul>
-    <li *ngFor="let follow of follows">
-      <a href="{{ follow.link }}"
-        ><span title="{{ follow.title }}"
-          ><app-icon [iconName]="follow.icon"></app-icon></span
-      ></a>
-    </li>
-  </ul>
+  <div class="follow-links-container">
+  <a
+    *ngFor="let follow of follows"
+    href="{{ follow.link }}"
+    class="follow-icon"
+    title="{{ follow.title }}"
+    ><app-icon [iconName]="follow.icon"></app-icon
+  ></a>
+</div>
 </div>

@@ -1,5 +1,5 @@
-<div class="education">
-  <h2><span><app-icon [iconName]="'education'"></app-icon></span> Education</h2>
+<div class="education container-card">
+  <app-card-header [iconName]="'education'" title="Education"></app-card-header>
   <ul>
     <li *ngFor="let education of educationArr">
       {{ education.institution }}: {{ education.course }} {{ education.period }}

@@ -17,6 +17,7 @@ import { InterestsComponent } from './components/interests/interests.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 import { IconComponent } from './components/icon/icon.component';
+import { CardHeaderComponent } from './components/card-header/card-header.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { IconComponent } from './components/icon/icon.component';
     ResumeComponent,
     WorkExperienceComponent,
     IconComponent,
+    CardHeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

@@ -1,1 +1,15 @@
-<span class="icon_container" [innerHTML]="getIcon()"></span>
+<svg
+  *ngIf="icon"
+  preserveAspectRatio="xMidYMid meet"
+  [attr.viewBox]="icon.viewBox"
+  class="icon {{ icon.name }}"
+  stroke="currentColor"
+  fill="currentColor"
+  stroke-width="0"
+  role="img"
+  height="1em"
+  width="1em"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path *ngFor="let path of icon.paths" [attr.d]="path"></path>
+</svg>

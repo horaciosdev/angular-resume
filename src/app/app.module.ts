@@ -18,6 +18,7 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 import { IconComponent } from './components/icon/icon.component';
 import { CardHeaderComponent } from './components/card-header/card-header.component';
+import { SkillListComponent } from './components/skill-list/skill-list.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { CardHeaderComponent } from './components/card-header/card-header.compon
     WorkExperienceComponent,
     IconComponent,
     CardHeaderComponent,
+    SkillListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

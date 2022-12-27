@@ -8,8 +8,8 @@ export interface Resume {
   follows: Follow[];
   workExperiences: WorkExperience[];
   educationArr: Education[];
-  programmingSkills: ProgrammingSkills[];
-  softwareSkills: SoftwareSkills[];
+  programmingSkills: Skill[];
+  softwareSkills: Skill[];
   interests: Interests[];
 }
 
@@ -36,15 +36,9 @@ export interface Education {
   period: string;
 }
 
-export interface ProgrammingSkills {
+export interface Skill {
   icon: string;
-  language: string;
-  level: number;
-}
-
-export interface SoftwareSkills {
-  icon: string;
-  software: string;
+  skillName: string;
   level: number;
 }
 

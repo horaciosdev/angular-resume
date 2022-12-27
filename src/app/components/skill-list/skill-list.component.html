@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let skill of skillList">
+    <span class="icon"><app-icon [iconName]="skill.icon"></app-icon></span>
+    <span>
+      {{ skill.skillName }}
+      {{ skill.level }}</span
+    >
+  </li>
+</ul>

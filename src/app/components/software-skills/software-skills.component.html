@@ -1,11 +1,7 @@
 <div class="software-skills container-card">
-  <app-card-header [iconName]="'software'" title="Software Skills"></app-card-header>
-  <ul>
-    <li *ngFor="let software of softwareSkills">
-      <span
-        ><app-icon [iconName]="software.icon"></app-icon>
-        {{ software.software }} {{ software.level }}</span
-      >
-    </li>
-  </ul>
+  <app-card-header
+    [iconName]="'software'"
+    title="Software Skills"
+  ></app-card-header>
+  <app-skill-list [skillList]="softwareSkills"></app-skill-list>
 </div>

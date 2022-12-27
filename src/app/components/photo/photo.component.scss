@@ -1,11 +1,15 @@
 .photo {
   text-align: center;
 
+  .photo-container{
+    background: linear-gradient(135deg, #702a70 0%, #280f28 100%);
+  }
+
   img {
     width: 100%;
-    background-color: #aaa;
+    background: #ddd;
     border-radius: 50%;
-    box-shadow: 0px 0px 0.5rem 0.1rem #000;
+    box-shadow: 0 0 2px 1px #ddd;
     object-fit: contain;
   }
 
@@ -13,6 +17,7 @@
     font-size: 2rem;
     font-weight: bold;
   }
+
   .role {
     font-size: 1.4rem;
     font-weight: bold;

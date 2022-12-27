@@ -1,6 +1,11 @@
-<div class="work-experience container-card">
-  <app-card-header [iconName]="'suitcase'" title="Work Experience"></app-card-header>
-  <ul *ngFor="let workExperience of workExperiences">
-    <li>{{ workExperience.company }} {{ workExperience.period }}</li>
-  </ul>
+<div class="card-container">
+  <app-card-header
+    [iconName]="'suitcase'"
+    title="Work Experience"
+  ></app-card-header>
+  <div class="card-list-content">
+    <ul *ngFor="let workExperience of workExperiences">
+      <li>{{ workExperience.company }} {{ workExperience.period }}</li>
+    </ul>
+  </div>
 </div>

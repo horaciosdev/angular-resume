@@ -1,7 +1,9 @@
-<div class="programming-skills container-card">
+<div class="programming-skills card-container">
   <app-card-header
     [iconName]="'code'"
     title="Programming Skills"
   ></app-card-header>
-  <app-skill-list [skillList]="programmingSkills"></app-skill-list>
+  <div class="card-list-content">
+    <app-skill-list [skillList]="programmingSkills"></app-skill-list>
+  </div>
 </div>

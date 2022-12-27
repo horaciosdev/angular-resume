@@ -14,21 +14,23 @@
 body {
   justify-content: center;
   align-items: center;
-  background: $background-gradient;
-  color: #ccc;
+  background: #eee;
+  color: #3d405b;
   font-family: Ubuntu;
   letter-spacing: 0.65px;
 }
 
-.inlineblock{
+.inlineblock {
   display: inline-block;
 }
 
-.container-card {
-  background: linear-gradient(135deg, #1d1d1d 0%, #2a2a2a 100%);
+.card-container {
+  background: #eee;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 2px 1px #702a70;
+  border: solid 1px #ccc;
+  .card-list-content {
+    padding: 10px 19px 0;
+  }
 }
 
 hr {

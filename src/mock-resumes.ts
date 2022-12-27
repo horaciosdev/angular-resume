@@ -4,7 +4,7 @@ import { environment } from './app/environments/environment';
 export const RESUMES: Resume[] = [
   {
     id: 1,
-    name: 'Horacio',
+    name: 'Horacio Schumann',
     photoUrl: 'http://localhost:4200/assets/image/horacio.png',
     role: 'Angular Front-end',
     about:

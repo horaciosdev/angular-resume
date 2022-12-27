@@ -1,8 +1,11 @@
-<div class="education container-card">
+<div class="education card-container">
   <app-card-header [iconName]="'education'" title="Education"></app-card-header>
-  <ul>
-    <li *ngFor="let education of educationArr">
-      {{ education.institution }}: {{ education.course }} {{ education.period }}
-    </li>
-  </ul>
+  <div class="card-list-content">
+    <ul>
+      <li *ngFor="let education of educationArr">
+        {{ education.institution }}: {{ education.course }}
+        {{ education.period }}
+      </li>
+    </ul>
+  </div>
 </div>

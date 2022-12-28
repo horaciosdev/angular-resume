@@ -1,0 +1,19 @@
+div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  .interest {
+    margin: 5px;
+    .icon-container{
+        width: 100%;
+    }
+    .interest-icon {      
+      border-radius: 50%;
+      border: solid 1px #666;
+      font-size: 2rem;
+      padding: 10px;
+    }
+  }
+}

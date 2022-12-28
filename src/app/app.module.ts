@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { WorkExperienceComponent } from './components/work-experience/work-exper
 import { IconComponent } from './components/icon/icon.component';
 import { CardHeaderComponent } from './components/card-header/card-header.component';
 import { SkillListComponent } from './components/skill-list/skill-list.component';
+import { BarComponent } from './components/bar/bar.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +40,14 @@ import { SkillListComponent } from './components/skill-list/skill-list.component
     IconComponent,
     CardHeaderComponent,
     SkillListComponent,
+    BarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

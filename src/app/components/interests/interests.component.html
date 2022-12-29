@@ -2,10 +2,8 @@
   <app-card-header [iconName]="'star'" title="Interests"></app-card-header>
   <ul>
     <li *ngFor="let interest of interests">
-      <span>
-        <app-icon [iconName]="interest.icon"></app-icon
-        >{{ interest.interest }}</span
-      >
+      <div class="icon"><app-icon [iconName]="interest.icon"></app-icon></div>
+      <div>{{ interest.interest }}</div>
     </li>
   </ul>
 </div>

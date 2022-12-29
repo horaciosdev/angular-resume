@@ -10,7 +10,7 @@ export interface Resume {
   educationArr: Education[];
   programmingSkills: Skill[];
   softwareSkills: Skill[];
-  interests: Interests[];
+  interests: Interest[];
 }
 
 export interface Contact {
@@ -42,7 +42,7 @@ export interface Skill {
   level: number;
 }
 
-export interface Interests {
+export interface Interest {
   icon: string;
   interest: string;
 }

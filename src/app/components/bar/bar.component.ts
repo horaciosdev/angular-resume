@@ -43,8 +43,4 @@ export class BarComponent {
       this.state = 'end';
     }, 0);
   }
-
-  toggle() {
-    this.state = this.state === 'start' ? 'end' : 'start';
-  }
 }

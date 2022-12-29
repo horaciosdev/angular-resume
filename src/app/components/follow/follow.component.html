@@ -3,6 +3,7 @@
   <div class="follow-links-container">
     <a
       *ngFor="let follow of follows"
+      target="_blank"
       href="{{ follow.link }}"
       class="follow-icon"
       title="{{ follow.title }}"

@@ -2,12 +2,14 @@
   <li *ngFor="let skill of skillList">
     <span class="skill-name">
       <span class="icon"><app-icon [iconName]="skill.icon"></app-icon></span>
-      <span> {{ skill.skillName }}</span>
+      <span class="name">{{ skill.skillName }}</span>
     </span>
     <span class="bar"><app-bar [percent]="skill.level"></app-bar></span>
-    <span class="level-name">{{ getLevelTitle(skill.level) }}</span>
-    <span class="info" matTooltip="{{getInfo( getLevelTitle(skill.level) )}}">
-      <span class="icon"><app-icon [iconName]="'info'"></app-icon></span>
-    </span>
+    <span
+      class="level-name {{ getLevelTitle(skill.level) | lowercase }}"
+      matTooltip="{{ getInfo(getLevelTitle(skill.level)) }}"
+      [matTooltipPosition]="'left'"
+      >{{ getLevelTitle(skill.level) }}</span
+    >
   </li>
 </ul>

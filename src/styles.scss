@@ -25,11 +25,30 @@ body {
 }
 
 .card-container {
+  transition: 0.4s;
   background: #eee;
   padding: 20px;
   border: solid 1px #ccc;
+  position: relative;
   .card-list-content {
     padding: 0 18px;
+  }
+
+  h2{
+    margin-bottom: 5px;
+    .icon{
+      transition: 0.6s;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 3px #666;
+    z-index: 999;
+    h2 {
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
   }
 }
 
@@ -47,6 +66,7 @@ ul {
 
 .icon {
   display: inline-block;
+  vertical-align: middle;
 }
 
 html,

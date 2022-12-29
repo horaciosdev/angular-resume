@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Resume, Interests } from '../Resume';
+import { Resume, Interest } from '../Resume';
 import { SharedResumeService } from 'src/app/services/shared-resume.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { SharedResumeService } from 'src/app/services/shared-resume.service';
   styleUrls: ['./interests.component.scss'],
 })
 export class InterestsComponent {
-  interests!: Interests[];
+  interests!: Interest[];
   constructor(private sharedResumeService: SharedResumeService) {}
   ngOnInit(): void {
     let resume = this.sharedResumeService.getResume();

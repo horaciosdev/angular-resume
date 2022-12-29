@@ -5,12 +5,76 @@
 .bar {
   display: inline-block;
   margin-right: 10px;
-  width: calc(100% - 120px - 100px - 20px);
+  width: calc(100% - 120px - 100px);
 }
 .level-name {
+  transition: .3s;
   display: inline-block;
   width: 90px;
+  font-weight: bold;
+  font-size: .9rem;
+  text-align: center;
+  border-radius: 10px;
+  border: solid 1px #ccc;
+  background-color: #fff;
+
+  &:hover{    
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+
+    &.iniciante{
+      background-color: #99CCFF;// (azul-claro) // #90EE90 (verde-claro)
+    }
+    &.junior{ 
+      background-color: #82da82;//Junior: #99CCFF (azul-claro) ou #82da82 (verde-claro)
+    }
+    
+    &.pleno{ 
+      background-color: #FF9900;//Pleno: #FFFF00 (amarelo) ou #FF9900 (laranja)
+    }
+    
+    &.senior{ 
+      background-color: #000066;//Senior: #000066 (azul-escuro) ou #006600 (verde-escuro)
+    }
+    
+    &.master{ 
+      background-color: #660066;//Master: #660066 (roxo) ou #990000 (vermelho-escuro)
+    }
+    
+    &.especialista{ 
+      background-color: #FF0000;//Especialista: #FF0000 (vermelho) ou #006600 (verde)
+    }
+  }
 }
-.info {
-  width: 20px;
+.icon {
+  transition: 0.4s;
 }
+
+.name {
+  padding-left: 3px;
+}
+
+li {
+  font-size: 1rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  cursor: default;
+  padding: 2px 5px;
+  border-radius: 10px;
+  &:hover {
+    background-color: #fff;
+    position: relative;
+    top: -1px;
+    left: -1px;
+    box-shadow: 1px 1px 1px 1px #ccc;
+  }
+}
+
+
+
+
+
+
+

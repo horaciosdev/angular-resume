@@ -1,8 +1,4 @@
 .social {
-  h2 {
-    margin-bottom: 1rem;
-  }
-
   .follow-links-container {
     display: flex;
     justify-content: center;
@@ -16,10 +12,11 @@
     font-size: 1.8rem;
     vertical-align: middle;
     padding: 4px;
-    transition: 0.4s;
+    transition: 0.3s;
     &:hover {
       color: #702a70 !important;
       background: #fff;
+      box-shadow: 0 0 3px 1px #702a70;
     }
   }
 }

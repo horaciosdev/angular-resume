@@ -1,10 +1,16 @@
+.bar, .fill{
+  border-radius: 10px;
+}
 .bar {    
-  height: 15px;
+  min-height: 16px;
   background-color: #ccc;
 }
 .fill {
   background: linear-gradient(135deg, #702a70 0%, #280f28 100%);
   color: #fff;
-  height: 15px;
+  min-height: 16px;
   text-align: right;
+  line-height: 1;
+  font-size: .8rem;  
+  padding: 1px 3px;
 }

@@ -1,5 +1,4 @@
 import { Resume } from './app/components/Resume';
-import { environment } from './app/environments/environment';
 
 export const RESUMES: Resume[] = [
   {
@@ -66,16 +65,16 @@ export const RESUMES: Resume[] = [
       },
     ],
     programmingSkills: [
-      { icon: 'html', skillName: 'HTML', level: 90 },
-      { icon: 'css', skillName: 'CSS', level: 80 },
-      { icon: 'sass', skillName: 'SASS / SCSS', level: 70 },
-      { icon: 'javacript', skillName: 'JavaScript', level: 90 },
-      { icon: 'typescript', skillName: 'TypeScript', level: 90 },
-      { icon: 'jquery', skillName: 'jQuery', level: 50 },
-      { icon: 'react', skillName: 'REACT', level: 40 },
-      { icon: 'angular', skillName: 'Angular', level: 90 },
-      { icon: 'php', skillName: 'PHP', level: 80 },
-      { icon: 'mysql', skillName: 'MySQL', level: 90 },
+      { icon: 'html', skillName: 'HTML', level: 10 },
+      { icon: 'css', skillName: 'CSS', level: 20 },
+      { icon: 'sass', skillName: 'SASS / SCSS', level: 30 },
+      { icon: 'javacript', skillName: 'JavaScript', level: 40 },
+      { icon: 'typescript', skillName: 'TypeScript', level: 50 },
+      { icon: 'jquery', skillName: 'jQuery', level: 60 },
+      { icon: 'react', skillName: 'REACT', level: 70 },
+      { icon: 'angular', skillName: 'Angular', level: 80 },
+      { icon: 'php', skillName: 'PHP', level: 90 },
+      { icon: 'mysql', skillName: 'MySQL', level: 100 },
     ],
     softwareSkills: [
       { icon: 'vscode', skillName: 'VS Code', level: 60 },

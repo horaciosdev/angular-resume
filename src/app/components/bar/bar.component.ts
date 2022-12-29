@@ -17,7 +17,7 @@ const start = state(
 const end = state(
   'end',
   style({
-    width: '{{newPercent}}%',    
+    width: '{{newPercent}}%',
   }),
   { params: { newPercent: '0%' } }
 );
@@ -34,15 +34,14 @@ const fillBar = trigger('fillBar', [
   styleUrls: ['./bar.component.scss'],
   animations: [fillBar],
 })
-
 export class BarComponent {
   @Input() percent: number = 0;
-  @ViewChild('bar', { static: true }) bar!: ElementRef;
-
   state = 'start';
 
   ngAfterViewInit(): void {
-    this.state = 'end';
+    setTimeout(() => {
+      this.state = 'end';
+    }, 0);
   }
 
   toggle() {

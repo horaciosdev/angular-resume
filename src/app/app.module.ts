@@ -24,6 +24,7 @@ import { CardHeaderComponent } from './components/card-header/card-header.compon
 import { SkillListComponent } from './components/skill-list/skill-list.component';
 import { BarComponent } from './components/bar/bar.component';
 import { CareerListComponent } from './components/career-list/career-list.component';
+import { NameTagComponent } from './components/name-tag/name-tag.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { CareerListComponent } from './components/career-list/career-list.compon
     SkillListComponent,
     BarComponent,
     CareerListComponent,
+    NameTagComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,20 @@
+.side {
+  grid-area: side;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}
+
 .resume {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 10px;
-  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "side main main"
+    "footer footer footer";
+  gap: 10px;  
   padding: 10px;
-  max-width: 1024px;
-  margin-bottom: 400px;
+  width: 1024px;
 }

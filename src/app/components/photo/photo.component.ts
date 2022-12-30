@@ -10,8 +10,8 @@ import { Resume } from '../Resume';
   styleUrls: ['./photo.component.scss'],
 })
 export class PhotoComponent {
-  name: string = '';
   photoUrl: string = '';
+  name: string = '';
   role: string = '';
   baseApiUrl: string = environment.baseApiUrl;
 

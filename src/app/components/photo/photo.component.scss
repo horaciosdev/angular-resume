@@ -1,25 +1,11 @@
-.photo {
-  text-align: center;
+.photo-container{
+  background: linear-gradient(135deg, #702a70 0%, #280f28 100%);
+}
 
-  .photo-container{
-    background: linear-gradient(135deg, #702a70 0%, #280f28 100%);
-  }
-
-  img {
-    width: 100%;
-    background: #ddd;
-    border-radius: 50%;
-    box-shadow: 0 0 2px 1px #ddd;
-    object-fit: contain;
-  }
-
-  .name {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-
-  .role {
-    font-size: 1.4rem;
-    font-weight: bold;
-  }
+img {
+  width: 100%;
+  background: #ddd;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 1px #ddd;
+  object-fit: contain;
 }

@@ -13,6 +13,7 @@
 html,
 body {
   height: 100%;
+  margin-bottom: 400px;
 }
 
 body {
@@ -73,4 +74,38 @@ ul {
 .icon {
   display: inline-block;
   vertical-align: middle;
+}
+.content {
+  padding: 15px;
+  background: #ddd;
+  height: 100%;
+}
+
+@media print {
+  * {
+    background: none !important;
+    border-width: 0.5px !important;
+    color: #000 !important;
+    text-shadow: none !important;
+  }
+  .content {
+    padding: 5px;
+  }
+  .card-container {
+    padding: 5px 15px !important;
+  }
+
+  .resume {
+    width: 100% !important;
+    padding: 2px !important;
+    margin: 0 !important;
+    gap: 0 !important;
+  }
+  .fill {
+    border: solid 0.5px #666 !important;
+  }
+
+  @page {
+    margin: 2px;
+  }
 }

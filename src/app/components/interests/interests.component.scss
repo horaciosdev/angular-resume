@@ -9,14 +9,28 @@ ul {
 li {
   text-align: center;
   width: 90px;
+
+  &:hover{
+    color: #702a70;
+    font-weight: bold;
+    .icon{
+      font-size: 2.5rem;
+      color: #fff;
+      background-color: #702a70;
+      transform: rotate(360deg);
+      box-shadow: 0 0 5px 1px #ccc;
+    }
+  }
 }
 .icon {
+  transition: 0.1s;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   border-radius: 50%;
   width: 40px;
-  aspect-ratio: 1 / 1;
+  height: 40px;
+  padding: 30px;
   margin: 0 auto;
 }

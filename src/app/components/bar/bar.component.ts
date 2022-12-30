@@ -19,13 +19,14 @@ const end = state(
   style({
     width: '{{newPercent}}%',
   }),
-  { params: { newPercent: '0%' } }
-);
+  { params: { newPercent: '0%', duration: '1' } }
+ );
+ 
 
 const fillBar = trigger('fillBar', [
   start,
   end,
-  transition('start <=> end', [animate('1s')]),
+  transition('start <=> end', [animate('{{duration}}s ease')]),
 ]);
 
 @Component({
@@ -36,6 +37,8 @@ const fillBar = trigger('fillBar', [
 })
 export class BarComponent {
   @Input() percent: number = 0;
+  @Input() duration: number = 1;
+
   state = 'start';
 
   ngAfterViewInit(): void {

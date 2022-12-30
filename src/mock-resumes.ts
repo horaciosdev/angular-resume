@@ -43,24 +43,24 @@ export const RESUMES: Resume[] = [
       },
     ],
     workExperiences: [
-      { company: 'Update', period: '2010-2015' },
-      { company: 'Fortune', period: '2015-2020' },
-      { company: 'SplashScreen', period: '2020-2022' },
+      { institution: 'SplashScreen', description: '', period: '2020-2022' },
+      { institution: 'Fortune', description: '', period: '2015-2020' },
+      { institution: 'Update', description: '', period: '2010-2015' },      
     ],
     educationArr: [
       {
         institution: 'FADERGS',
-        course: 'Sistemas para Internet',
+        description: 'Sistemas para Internet',
         period: '2018-2020',
       },
       {
         institution: 'UNISINOS',
-        course: 'Jogos Digitais',
+        description: 'Jogos Digitais',
         period: '2018-2020',
       },
       {
         institution: 'QI',
-        course: 'Técnico em Informática',
+        description: 'Técnico em Informática',
         period: '2018-2020',
       },
     ],

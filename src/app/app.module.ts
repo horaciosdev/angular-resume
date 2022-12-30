@@ -23,6 +23,7 @@ import { IconComponent } from './components/icon/icon.component';
 import { CardHeaderComponent } from './components/card-header/card-header.component';
 import { SkillListComponent } from './components/skill-list/skill-list.component';
 import { BarComponent } from './components/bar/bar.component';
+import { CareerListComponent } from './components/career-list/career-list.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { BarComponent } from './components/bar/bar.component';
     CardHeaderComponent,
     SkillListComponent,
     BarComponent,
+    CareerListComponent,
   ],
   imports: [
     BrowserModule,

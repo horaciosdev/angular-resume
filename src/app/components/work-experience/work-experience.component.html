@@ -4,8 +4,6 @@
     title="Work Experience"
   ></app-card-header>
   <div class="card-list-content">
-    <ul *ngFor="let workExperience of workExperiences">
-      <li>{{ workExperience.company }} {{ workExperience.period }}</li>
-    </ul>
+    <app-career-list [careerList]="workExperiences"></app-career-list>
   </div>
 </div>

@@ -6,8 +6,8 @@ export interface Resume {
   about: string;
   contacts: Contact[];
   follows: Follow[];
-  workExperiences: WorkExperience[];
-  educationArr: Education[];
+  workExperiences: Career[];
+  educationArr: Career[];
   programmingSkills: Skill[];
   softwareSkills: Skill[];
   interests: Interest[];
@@ -25,14 +25,9 @@ export interface Follow {
   link: string;
 }
 
-export interface WorkExperience {
-  company: string;
-  period: string;
-}
-
-export interface Education {
+export interface Career {
   institution: string;
-  course: string;
+  description: string;
   period: string;
 }
 

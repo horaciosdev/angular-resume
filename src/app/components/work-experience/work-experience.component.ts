@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Resume, WorkExperience } from '../Resume';
+import { Resume, Career } from '../Resume';
 import { SharedResumeService } from 'src/app/services/shared-resume.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { SharedResumeService } from 'src/app/services/shared-resume.service';
   styleUrls: ['./work-experience.component.scss'],
 })
 export class WorkExperienceComponent {
-  workExperiences!: WorkExperience[];
+  workExperiences!: Career[];
 
   constructor(private sharedResumeService: SharedResumeService) {}
 

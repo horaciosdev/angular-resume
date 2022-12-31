@@ -1,20 +1,47 @@
 import { Component } from '@angular/core';
+import { ResumeService } from 'src/app/services/resume.service';
 import { Resume } from '../Resume';
-import { SharedResumeService } from 'src/app/services/shared-resume.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.scss'],
 })
-export class ResumeComponent {  
-  constructor(private sharedResumeService: SharedResumeService) {}
+export class ResumeComponent {
+  resume!: Resume;
+  resumeList: any[] = [];
+
+  constructor(
+    private resumeService: ResumeService,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    this.setResume(1);
+    this.getResumeList();
+    const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
+    this.getResume(id);
   }
 
-  setResume(id: number): void {
-    this.sharedResumeService.setResume(id);
+  getResume(id: number): void {
+    if (this.resume) {
+      if (this.resume.id === id) {
+        return;
+      }
+    }
+    this.resumeService
+      .getResume(id)
+      .subscribe((resume) => (this.resume = resume));
+    console.log(this.resume.id);
+  }
+
+  getResumeList(): void {
+    this.resumeService
+      .getResumeList()
+      .subscribe((resumeList) => (this.resumeList = resumeList));
+  }
+
+  selectResume(id: number){
+    this.getResume(id);
   }
 }

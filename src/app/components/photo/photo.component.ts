@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FileExistsService } from 'src/app/services/file-exists.service';
 import { environment } from 'src/app/environments/environment';
-import { SharedResumeService } from 'src/app/services/shared-resume.service';
 import { Resume } from '../Resume';
 
 @Component({
@@ -10,28 +9,19 @@ import { Resume } from '../Resume';
   styleUrls: ['./photo.component.scss'],
 })
 export class PhotoComponent {
-  photoUrl: string = '';
-  name: string = '';
-  role: string = '';
+  @Input() resume!: Resume;
   baseApiUrl: string = environment.baseApiUrl;
 
-  constructor(
-    private fileExistsService: FileExistsService,
-    private sharedResumeService: SharedResumeService
-  ) {}
+  constructor(private fileExistsService: FileExistsService) {}
 
-  ngOnInit(): void {
-    let resume: Resume = this.sharedResumeService.getResume();
-    this.name = resume.name;
-    this.photoUrl = resume.photoUrl;
-    this.role = resume.role;
-    this.loadImage(this.photoUrl);
+  ngOnInit(): void {    
+    this.loadImage(this.resume.photoUrl);
   }
 
   loadImage(url: string): void {
     this.fileExistsService.checkFileExists(url).subscribe((fileExists) => {
       if (!fileExists) {
-        this.photoUrl = `${this.baseApiUrl}assets/image/default.png`;
+        this.resume.photoUrl = `${this.baseApiUrl}assets/image/default.png`;
       }
     });
   }

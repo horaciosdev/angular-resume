@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { SharedResumeService } from 'src/app/services/shared-resume.service';
+import { Component, Input } from '@angular/core';
 import { Resume } from '../Resume';
 
 @Component({
@@ -8,16 +7,5 @@ import { Resume } from '../Resume';
   styleUrls: ['./name-tag.component.scss']
 })
 export class NameTagComponent {
-  name: string = '';
-  role: string = '';
-
-  constructor(    
-    private sharedResumeService: SharedResumeService
-  ) {}
-
-  ngOnInit(): void {
-    let resume: Resume = this.sharedResumeService.getResume();
-    this.name = resume.name;    
-    this.role = resume.role;    
-  }
+  @Input() resume!: Resume;  
 }

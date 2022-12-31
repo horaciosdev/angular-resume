@@ -12,7 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PhotoComponent } from './components/photo/photo.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { SocialComponent } from './components/follow/follow.component';
+import { SocialComponent } from './components/Social/social.component';
 import { EducationComponent } from './components/education/education.component';
 import { ProgrammingSkillsComponent } from './components/programming-skills/programming-skills.component';
 import { SoftwareSkillsComponent } from './components/software-skills/software-skills.component';
@@ -53,7 +53,7 @@ import { NameTagComponent } from './components/name-tag/name-tag.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatTooltipModule
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

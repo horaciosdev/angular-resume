@@ -1,7 +1,7 @@
 <div class="contact card-container">
   <h2>Contact:</h2>
   <ul>
-    <li *ngFor="let contact of contacts" title="{{ contact.title }}">
+    <li *ngFor="let contact of resume.contacts" title="{{ contact.title }}">
       <span class="icon {{contact.icon}}" ><app-icon [iconName]="contact.icon"></app-icon
       ></span>
       <span class="contact">{{ contact.contact }}</span>

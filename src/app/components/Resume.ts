@@ -7,8 +7,7 @@ export interface Resume {
   contacts: Contact[];
   follows: Follow[];
   experiences: Experience[];
-  programmingSkills: Skill[];
-  softwareSkills: Skill[];
+  skills: Skills[];  
   interests: Interest[];
 }
 
@@ -40,6 +39,12 @@ export interface Skill {
   icon: string;
   skillName: string;
   level: number;
+}
+
+export interface Skills {
+  icon: string;
+  title: string;
+  skillList: Skill[];
 }
 
 export interface Interest {

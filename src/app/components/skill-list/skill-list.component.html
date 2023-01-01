@@ -4,7 +4,12 @@
       <span class="icon"><app-icon [iconName]="skill.icon"></app-icon></span>
       <span class="name">{{ skill.skillName }}</span>
     </span>
-    <span class="bar"><app-bar [percent]="skill.level" [duration]="i/skillList.length"></app-bar></span>
+    <span class="bar"
+      ><app-bar
+        [percent]="skill.level"
+        [duration]="i / skillList.length"
+      ></app-bar
+    ></span>
     <span
       class="level-name {{ getLevelTitle(skill.level) | lowercase }}"
       matTooltip="{{ getInfo(getLevelTitle(skill.level)) }}"

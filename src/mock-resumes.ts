@@ -65,7 +65,7 @@ export const RESUMES: Resume[] = [
         ],
       },
       {
-        icon: 'suitcase',
+        icon: 'education',
         title: 'Education',
         history: [
           {
@@ -86,42 +86,35 @@ export const RESUMES: Resume[] = [
         ],
       },
     ],
-    // experiences: [
-    //   {
-    //     institution: 'FADERGS',
-    //     description: 'Sistemas para Internet',
-    //     period: '2018-2020',
-    //   },
-    //   {
-    //     institution: 'UNISINOS',
-    //     description: 'Jogos Digitais',
-    //     period: '2016-2018',
-    //   },
-    //   {
-    //     institution: 'QI',
-    //     description: 'Técnico em Informática',
-    //     period: '2010-2012',
-    //   },
-    // ],
-    programmingSkills: [
-      { icon: 'html', skillName: 'HTML', level: 85 },
-      { icon: 'css', skillName: 'CSS', level: 85 },
-      { icon: 'sass', skillName: 'SASS / SCSS', level: 60 },
-      { icon: 'javacript', skillName: 'JavaScript', level: 85 },
-      { icon: 'typescript', skillName: 'TypeScript', level: 65 },
-      { icon: 'jquery', skillName: 'jQuery', level: 70 },
-      { icon: 'react', skillName: 'REACT', level: 40 },
-      { icon: 'angular', skillName: 'Angular', level: 60 },
-      { icon: 'php', skillName: 'PHP', level: 80 },
-      { icon: 'mysql', skillName: 'MySQL', level: 80 },
-    ],
-    softwareSkills: [
-      { icon: 'vscode', skillName: 'VS Code', level: 65 },
-      { icon: 'gamemaker', skillName: 'GameMaker', level: 70 },
-      { icon: 'photoshop', skillName: 'Photoshop', level: 50 },
-      { icon: 'blender', skillName: 'Blender', level: 65 },
-      { icon: 'inkscape', skillName: 'Inkscape', level: 40 },
-      { icon: 'lmms', skillName: 'LMMS', level: 50 },
+    skills: [
+      {
+        icon: 'code',
+        title: 'Programming Skills',
+        skillList: [
+          { icon: 'html', skillName: 'HTML', level: 85 },
+          { icon: 'css', skillName: 'CSS', level: 85 },
+          { icon: 'sass', skillName: 'SASS / SCSS', level: 60 },
+          { icon: 'javacript', skillName: 'JavaScript', level: 85 },
+          { icon: 'typescript', skillName: 'TypeScript', level: 65 },
+          { icon: 'jquery', skillName: 'jQuery', level: 70 },
+          { icon: 'react', skillName: 'REACT', level: 40 },
+          { icon: 'angular', skillName: 'Angular', level: 60 },
+          { icon: 'php', skillName: 'PHP', level: 80 },
+          { icon: 'mysql', skillName: 'MySQL', level: 80 },
+        ],
+      },
+      {
+        icon: 'software',
+        title: 'Software Skills',
+        skillList: [
+          { icon: 'vscode', skillName: 'VS Code', level: 65 },
+          { icon: 'gamemaker', skillName: 'GameMaker', level: 70 },
+          { icon: 'photoshop', skillName: 'Photoshop', level: 50 },
+          { icon: 'blender', skillName: 'Blender', level: 65 },
+          { icon: 'inkscape', skillName: 'Inkscape', level: 40 },
+          { icon: 'lmms', skillName: 'LMMS', level: 50 },
+        ],
+      },
     ],
     interests: [
       { icon: 'brush', interest: '2D Art' },

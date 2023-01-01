@@ -33,14 +33,19 @@
 .menu {
   display: flex;
   flex-wrap: wrap;
+  gap: 5px;
   position: relative;
+  max-height: 200px;
+  .print-button {
+    margin-left: auto;
+  }
+  
   button {
     font-weight: bold;
     vertical-align: middle;
     display: inline-block;
     width: 100px;
     height: 50px;
-    margin: 0 5px;
     border-radius: 10px;
     border: solid 1px #666;
     transition: 0.3s;

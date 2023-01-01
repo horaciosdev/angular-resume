@@ -13,18 +13,17 @@ import { PhotoComponent } from './components/photo/photo.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SocialComponent } from './components/Social/social.component';
-import { EducationComponent } from './components/education/education.component';
 import { ProgrammingSkillsComponent } from './components/programming-skills/programming-skills.component';
 import { SoftwareSkillsComponent } from './components/software-skills/software-skills.component';
 import { InterestsComponent } from './components/interests/interests.component';
 import { ResumeComponent } from './components/resume/resume.component';
-import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 import { IconComponent } from './components/icon/icon.component';
 import { CardHeaderComponent } from './components/card-header/card-header.component';
 import { SkillListComponent } from './components/skill-list/skill-list.component';
 import { BarComponent } from './components/bar/bar.component';
 import { CareerListComponent } from './components/career-list/career-list.component';
 import { NameTagComponent } from './components/name-tag/name-tag.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -35,18 +34,17 @@ import { NameTagComponent } from './components/name-tag/name-tag.component';
     AboutComponent,
     ContactComponent,
     SocialComponent,
-    EducationComponent,
     ProgrammingSkillsComponent,
     SoftwareSkillsComponent,
     InterestsComponent,
     ResumeComponent,
-    WorkExperienceComponent,
     IconComponent,
     CardHeaderComponent,
     SkillListComponent,
     BarComponent,
     CareerListComponent,
     NameTagComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,

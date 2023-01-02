@@ -8,12 +8,15 @@ import { Observable, of } from 'rxjs';
 })
 export class ResumeService {
   getResume(id: number): Observable<Resume> {
-    const resume = RESUMES.find((r) => r.id === id)!;
+    const resume =
+      RESUMES.find((r) => r.id === id) || RESUMES.find((r) => r.id === 1)!;
     return of(resume);
   }
 
-  getResumeList(): Observable<{id?: number, name: string}[]>{
-    const resumeList: {id?: number, name: string}[] = [...RESUMES].map(( {id, name})=> ({ id, name}));
+  getResumeList(): Observable<{ id?: number; name: string }[]> {
+    const resumeList: { id?: number; name: string }[] = [...RESUMES].map(
+      ({ id, name }) => ({ id, name })
+    );
     return of(resumeList);
   }
 }

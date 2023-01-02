@@ -6,8 +6,11 @@ export const RESUMES: Resume[] = [
     name: 'Horacio Schumann',
     photoUrl: 'http://localhost:4200/assets/image/horacio.png',
     role: 'Angular Front-end',
-    about:
-      'Sou um cara legal, amet consectetur adipisicing elit. Rerum distinctio porro consectetur debitis accusamus consequuntur natus, quibusdam repellat placeat ipsum facilis sunt expedita facere, dicta incidunt? Autem molestiae temporibus vel.',
+    about: `Olá! Meu nome é Horácio e sou programador.
+            Desde pequeno, sempre fui muito curioso e gostava de aprender coisas novas.
+            Isso me levou a ter interesse em diversas áreas, como tecnologia, ciência e arte.
+            Além disso, sou bastante dedicado e comprometido com tudo o que faço.
+            Acredito que o aprendizado, a experiência e o senso crítico são fundamentais para o crescimento pessoal e profissional, e estou sempre aberto a novas oportunidades de crescimento.`,
     contacts: [
       {
         icon: 'whatsapp',
@@ -49,18 +52,18 @@ export const RESUMES: Resume[] = [
         history: [
           {
             institution: 'SplashScreen',
-            description: 'Game Dev',
-            period: '2020-2022',
+            description: 'Game Maker',
+            period: '2021-2022',
+          },          
+          {
+            institution: 'Update',
+            description: 'Full Stack Developer',
+            period: '2018-2021',
           },
           {
             institution: 'Fortune',
             description: 'Full Stack Developer',
-            period: '2015-2020',
-          },
-          {
-            institution: 'Update',
-            description: 'Full Stack Developer',
-            period: '2010-2015',
+            period: '2015-2018',
           },
         ],
       },
@@ -76,12 +79,12 @@ export const RESUMES: Resume[] = [
           {
             institution: 'UNISINOS',
             description: 'Jogos Digitais',
-            period: '2016-2018',
+            period: '2010-2012',
           },
           {
             institution: 'QI',
             description: 'Técnico em Informática',
-            period: '2010-2012',
+            period: '2006-2008',
           },
         ],
       },

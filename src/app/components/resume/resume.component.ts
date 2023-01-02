@@ -20,7 +20,7 @@ export class ResumeComponent {
   ngOnInit(): void {
     this.getResumeList();
     const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
-    this.getResume(id);
+    this.getResume(id);    
   }
 
   getResume(id: number): void {

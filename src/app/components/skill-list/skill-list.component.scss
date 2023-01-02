@@ -8,41 +8,41 @@
   width: calc(100% - 120px - 100px);
 }
 .level-name {
-  transition: .3s;
+  transition: 0.3s;
   display: inline-block;
   width: 90px;
   font-weight: bold;
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-align: center;
   border-radius: 10px;
   border: solid 1px #ccc;
   background-color: #fff;
 
-  &:hover{    
+  &:hover {
     color: #fff;
     text-shadow: 1px 1px 1px #333;
 
-    &.iniciante{
-      background-color: #99CCFF;// (azul-claro) // #90EE90 (verde-claro)
+    &.Beginner {
+      background-color: #99ccff; // (azul-claro) // #90EE90 (verde-claro)
     }
-    &.junior{ 
-      background-color: #82da82;//Junior: #99CCFF (azul-claro) ou #82da82 (verde-claro)
+    &.junior {
+      background-color: #82da82; //Junior: #99CCFF (azul-claro) ou #82da82 (verde-claro)
     }
-    
-    &.pleno{ 
-      background-color: #FF9900;//Pleno: #FFFF00 (amarelo) ou #FF9900 (laranja)
+
+    &.full {
+      background-color: #ff9900; //Pleno: #FFFF00 (amarelo) ou #FF9900 (laranja)
     }
-    
-    &.senior{ 
-      background-color: #000066;//Senior: #000066 (azul-escuro) ou #006600 (verde-escuro)
+
+    &.senior {
+      background-color: #000066; //Senior: #000066 (azul-escuro) ou #006600 (verde-escuro)
     }
-    
-    &.master{ 
-      background-color: #702a70;//Master: #702a70 (roxo) ou #990000 (vermelho-escuro)
+
+    &.master {
+      background-color: #702a70; //Master: #702a70 (roxo) ou #990000 (vermelho-escuro)
     }
-    
-    &.especialista{ 
-      background-color: #FF0000;//Especialista: #FF0000 (vermelho) ou #006600 (verde)
+
+    &.specialist {
+      background-color: #ff0000; //Especialista: #FF0000 (vermelho) ou #006600 (verde)
     }
   }
 }
@@ -71,10 +71,3 @@ li {
     box-shadow: 1px 1px 1px 1px #ccc;
   }
 }
-
-
-
-
-
-
-

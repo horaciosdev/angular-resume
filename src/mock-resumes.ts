@@ -6,11 +6,11 @@ export const RESUMES: Resume[] = [
     name: 'Horacio Schumann',
     photoUrl: 'http://localhost:4200/assets/image/horacio.png',
     role: 'Angular Front-end',
-    about: `Olá! Meu nome é Horácio e sou programador.
-            Desde pequeno, sempre fui muito curioso e gostava de aprender coisas novas.
-            Isso me levou a ter interesse em diversas áreas, como tecnologia, ciência e arte.
-            Além disso, sou bastante dedicado e comprometido com tudo o que faço.
-            Acredito que o aprendizado, a experiência e o senso crítico são fundamentais para o crescimento pessoal e profissional, e estou sempre aberto a novas oportunidades de crescimento.`,
+    about: `Hello! My name is Horácio and I am a programmer.
+            Since I was a child, I have always been very curious and enjoyed learning new things.
+            This led me to have an interest in various areas such as technology, science, and art.
+            In addition, I am very dedicated and committed to everything I do.
+            I believe that learning, experience, and critical thinking are fundamental for personal and professional growth, and I am always open to new opportunities for growth.`,
     contacts: [
       {
         icon: 'whatsapp',
@@ -54,7 +54,7 @@ export const RESUMES: Resume[] = [
             institution: 'SplashScreen',
             description: 'Game Maker',
             period: '2021-2022',
-          },          
+          },
           {
             institution: 'Update',
             description: 'Full Stack Developer',

@@ -2,14 +2,18 @@ import { Injectable } from '@angular/core';
 import { RESUMES } from 'src/mock-resumes';
 import { Resume } from '../components/Resume';
 import { Observable, of } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ResumeService {
+  constructor(private router: Router) {}
   getResume(id: number): Observable<Resume> {
-    const resume =
-      RESUMES.find((r) => r.id === id) || RESUMES.find((r) => r.id === 1)!;
+    let resume = RESUMES.find((r) => r.id === id)!;
+    if (resume === undefined) {
+      resume = RESUMES.find((r) => r.id === 1)!;
+    }
     return of(resume);
   }
 

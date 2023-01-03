@@ -4,7 +4,7 @@ export const RESUMES: Resume[] = [
   {
     id: 1,
     name: 'Horacio Schumann',
-    photoUrl: 'http://localhost:4200/assets/image/horacio.png',
+    photoUrl: 'https://avatars.githubusercontent.com/u/29050661?v=4',
     role: 'Angular Front-end',
     about: `Hello! My name is Horácio and I am a programmer.
             Since I was a child, I have always been very curious and enjoyed learning new things.

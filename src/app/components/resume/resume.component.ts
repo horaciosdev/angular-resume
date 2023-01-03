@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ResumeService } from 'src/app/services/resume.service';
 import { Resume } from '../Resume';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-resume',
@@ -14,13 +14,14 @@ export class ResumeComponent {
 
   constructor(
     private resumeService: ResumeService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
     this.getResumeList();
     const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
-    this.getResume(id);    
+    this.getResume(id);
   }
 
   getResume(id: number): void {
@@ -32,7 +33,7 @@ export class ResumeComponent {
     this.resumeService
       .getResume(id)
       .subscribe((resume) => (this.resume = resume));
-    console.log(this.resume.id);
+    this.router.navigate(['/resume']);
   }
 
   getResumeList(): void {
@@ -41,7 +42,7 @@ export class ResumeComponent {
       .subscribe((resumeList) => (this.resumeList = resumeList));
   }
 
-  selectResume(id: number){
+  selectResume(id: number) {
     this.getResume(id);
   }
 }

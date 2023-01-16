@@ -7,7 +7,7 @@
   background-color: #ccc;
 }
 .fill {
-  background: linear-gradient(135deg, #702a70 0%, #280f28 100%);
+  background: var(--background-gradient-theme-color);
   color: #fff;
   text-shadow: 1px 1px 1px #222;
   min-height: 16px;

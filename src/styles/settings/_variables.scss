@@ -1,0 +1,41 @@
+:root .light-theme {
+  // light theme
+  --primary-base-color: #eee;
+  --background-color: #eee;
+  --container-background: #ddd;
+  --card-container-background: #eee;
+  --primary-text-color: #3d405b;
+}
+
+:root .dark-theme {
+  // dark theme:
+  --primary-base-color: #161616;
+  --background-color: #161616;
+  --container-background: #2f2f2f;
+  --card-container-background: #1d1d1d;
+  --primary-text-color: #ccc;
+}
+
+:root .purple {
+  // purple
+  --secondary-base-color: #702a70;
+  --hover-color: #702a70;
+  --background-gradient-theme-color: linear-gradient(
+    135deg,
+    #702a70 0%,
+    #280f28 100%
+  );
+  --hr-gradient: linear-gradient(145deg, #923cb5 15%, #57246b 75%, #000 100%);
+}
+
+:root .green {
+  // green
+  --secondary-base-color: #2a702a;
+  --hover-color: #2a702a;
+  --background-gradient-theme-color: linear-gradient(
+    135deg,
+    #2a702a 0%,
+    #0f2812 100%
+  );
+  --hr-gradient: linear-gradient(145deg, #2a702a 15%, #0f2812 75%, #000 100%);
+}

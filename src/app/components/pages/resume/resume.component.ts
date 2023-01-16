@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ResumeService } from 'src/app/services/resume.service';
-import { Resume } from '../Resume';
+import { Resume } from '../../Resume';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({

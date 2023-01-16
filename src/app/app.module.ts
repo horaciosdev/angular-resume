@@ -14,7 +14,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SocialComponent } from './components/Social/social.component';
 import { InterestsComponent } from './components/interests/interests.component';
-import { ResumeComponent } from './components/resume/resume.component';
+import { ResumeComponent } from './components/pages/resume/resume.component';
 import { IconComponent } from './components/icon/icon.component';
 import { CardHeaderComponent } from './components/card-header/card-header.component';
 import { SkillListComponent } from './components/skill-list/skill-list.component';
@@ -23,6 +23,7 @@ import { CareerListComponent } from './components/career-list/career-list.compon
 import { NameTagComponent } from './components/name-tag/name-tag.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ThemeChangerComponent } from './components/theme-changer/theme-changer.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     NameTagComponent,
     ExperienceComponent,
     SkillsComponent,
+    ThemeChangerComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,10 +4,10 @@ li {
   cursor: default;
 
   &:hover {
-    color: #702a70;
+    color: var(--hover-color);
     &:before {
-      background-color: #702a70;
-      box-shadow: 0 0 3px 1px #702a70;
+      background-color: var(--hover-color);
+      box-shadow: 0 0 3px 1px var(--hover-color);
       border-color: white;
     }
   }
@@ -36,7 +36,8 @@ li {
   .career-institution {
     font-weight: bold;
   }
-  .career-period, .career-description {
+  .career-period,
+  .career-description {
     display: block;
     margin-left: 33px;
   }

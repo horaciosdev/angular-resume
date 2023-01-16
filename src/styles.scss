@@ -1,4 +1,4 @@
-@import "variables";
+@import "styles/settings/variables";
 
 @font-face {
   font-family: Ubuntu;
@@ -12,20 +12,14 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-  margin-bottom: 400px;
-}
-
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 100%;
   justify-content: center;
   align-items: center;
-  background: #eee;
-  color: #3d405b;
-  font-family: Ubuntu;
+  background: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: Ubuntu, sans-serif;
   letter-spacing: 0.65px;
 }
 
@@ -40,7 +34,7 @@ a {
 
 .card-container {
   transition: 0.4s;
-  background: #eee;
+  background: var(--card-container-background);
   padding: 20px;
   border: solid 1px #ccc;
   position: relative;
@@ -70,7 +64,7 @@ hr {
   border: none;
   width: 100%;
   height: 3px;
-  background: $hr-gradient;
+  background: var(--hr-gradient);
   margin: 10px 0;
 }
 
@@ -82,9 +76,10 @@ ul {
   display: inline-block;
   vertical-align: middle;
 }
+
 .content {
   padding: 15px;
-  background: #ddd;
+  background: var(--container-background);
   height: 100%;
 }
 

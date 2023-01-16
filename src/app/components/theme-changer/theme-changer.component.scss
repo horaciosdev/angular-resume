@@ -1,0 +1,33 @@
+.theme-changer {
+  display: flex;
+  justify-content: right;
+  gap: 15px;
+  padding: 20px 20px 0;
+}
+.theme-button {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-style: inset;
+  border: solid 1px var(--secondary-base-color);
+  transition: box-shadow 0.3s, transform 0.3s;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary-base-color) 50%,
+    var(--secondary-base-color) 50%
+  );
+
+  &:hover {
+    scale: 1.1;
+    box-shadow: 0 0 3px 1px var(--hover-color);
+  }
+  &:active {
+    scale: 0.9;
+  }
+  &.selected {
+    scale: 1.1;
+    transform: rotate(45deg);
+  }
+}

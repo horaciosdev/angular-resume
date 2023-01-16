@@ -1,0 +1,22 @@
+<div class="theme-changer">
+  <div
+    class="theme-button dark-theme purple"
+    [ngClass]="{ selected: themeClass == 'dark-theme purple' }"
+    (click)="changeTheme('dark-theme purple')"
+  ></div>
+  <div
+    class="theme-button light-theme purple"
+    [ngClass]="{ selected: themeClass == 'light-theme purple' }"
+    (click)="changeTheme('light-theme purple')"
+  ></div>
+  <div
+    class="theme-button dark-theme green"
+    [ngClass]="{ selected: themeClass == 'dark-theme green' }"
+    (click)="changeTheme('dark-theme green')"
+  ></div>
+  <div
+    class="theme-button light-theme green"
+    [ngClass]="{ selected: themeClass == 'light-theme green' }"
+    (click)="changeTheme('light-theme green')"
+  ></div>
+</div>

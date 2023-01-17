@@ -8,7 +8,9 @@
         href="{{ interest.url }}"
         target="_blank"
       >
-        <div class="is-link"><app-icon [iconName]="'link'"></app-icon></div>
+        <div class="is-link no-print">
+          <app-icon [iconName]="'link'"></app-icon>
+        </div>
         <div class="icon"><app-icon [iconName]="interest.icon"></app-icon></div>
         <div>{{ interest.interest }}</div>
       </a>

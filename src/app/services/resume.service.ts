@@ -8,19 +8,28 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class ResumeService {
+  resumeList: Resume[] = RESUMES;
+
   constructor(private router: Router) {}
+
+  addResume(): Observable<Resume[]> {
+    let newResume = { ...this.resumeList[this.resumeList.length - 1] };
+    let newId = newResume.id! + 1;
+    newResume.id = newId;
+    this.resumeList = [...this.resumeList, newResume];
+
+    return of(this.resumeList);
+  }
+
   getResume(id: number): Observable<Resume> {
-    let resume = RESUMES.find((r) => r.id === id)!;
+    let resume = this.resumeList.find((r) => r.id === id)!;
     if (resume === undefined) {
-      resume = RESUMES.find((r) => r.id === 1)!;
+      resume = this.resumeList.find((r) => r.id === 1)!;
     }
     return of(resume);
   }
 
-  getResumeList(): Observable<{ id?: number; name: string }[]> {
-    const resumeList: { id?: number; name: string }[] = [...RESUMES].map(
-      ({ id, name }) => ({ id, name })
-    );
-    return of(resumeList);
+  getResumeList(): Observable<Resume[]> {
+    return of(this.resumeList);
   }
 }

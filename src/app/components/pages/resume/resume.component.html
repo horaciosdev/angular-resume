@@ -1,12 +1,12 @@
 <div class="container">
-  <div class="resume">    
-    <!-- <div class="header no-print">
+  <div class="resume">
+    <div class="header no-print">
       <div class="content">
         <div class="card-container">
           <div class="menu">
             <button
               *ngFor="let resumeItem of resumeList"
-              (click)="selectResume(resumeItem.id)"
+              (click)="selectResume(resumeItem.id!)"
               [ngClass]="{
                 selected: resumeItem.id === resume.id ? true : false
               }"
@@ -15,7 +15,7 @@
                 {{ resumeItem.name }}
               </a>
             </button>
-            <button>
+            <button (click)="addResume()">
               <span class="icon"
                 ><app-icon [iconName]="'plus'"></app-icon
               ></span>
@@ -23,7 +23,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="side">
       <div class="content">
         <app-sidebar [resume]="resume"></app-sidebar>

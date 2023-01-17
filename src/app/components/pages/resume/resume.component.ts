@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ResumeComponent {
   resume!: Resume;
-  resumeList: any[] = [];
+  resumeList: Resume[] = [];
 
   constructor(
     private resumeService: ResumeService,
@@ -44,5 +44,12 @@ export class ResumeComponent {
 
   selectResume(id: number) {
     this.getResume(id);
+  }
+
+  addResume(): void {
+    this.resumeService.addResume().subscribe((response) => {
+      this.resumeList = response;
+      console.log(response);
+    });
   }
 }

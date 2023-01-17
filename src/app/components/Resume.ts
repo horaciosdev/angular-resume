@@ -7,7 +7,7 @@ export interface Resume {
   contacts: Contact[];
   follows: Follow[];
   experiences: Experience[];
-  skills: Skills[];  
+  skills: Skills[];
   interests: Interest[];
 }
 

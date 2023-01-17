@@ -49,7 +49,7 @@ export class ResumeComponent {
   addResume(): void {
     this.resumeService.addResume().subscribe((response) => {
       this.resumeList = response;
-      console.log(response);
+      this.resume = this.resumeList[this.resumeList.length-1];
     });
   }
 }

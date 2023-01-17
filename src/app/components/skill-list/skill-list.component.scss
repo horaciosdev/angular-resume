@@ -15,34 +15,57 @@
   font-size: 0.9rem;
   text-align: center;
   border-radius: 10px;
-  border: solid 1px #ccc;
-  background-color: #fff;
+  color: #fff;
+  background: var(--background-gradient-theme-color);
 
   &:hover {
-    color: #fff;
     text-shadow: 1px 1px 1px #333;
 
     &.Beginner {
-      background-color: #99ccff; // (azul-claro) // #90EE90 (verde-claro)
+      background: linear-gradient(
+        135deg,
+        #99ccff 0%,
+        #212c37 100%
+      ); // (azul-claro) // #90EE90 (verde-claro)
     }
     &.junior {
-      background-color: #82da82; //Junior: #99CCFF (azul-claro) ou #82da82 (verde-claro)
+      background: linear-gradient(
+        135deg,
+        #82da82 0%,
+        #223922 100%
+      ); //Junior: #99CCFF (azul-claro) ou #82da82 (verde-claro)
     }
 
     &.full {
-      background-color: #ff9900; //Pleno: #FFFF00 (amarelo) ou #FF9900 (laranja)
+      background: linear-gradient(
+        135deg,
+        #ff9900 0%,
+        #3e2500 100%
+      ); //Pleno: #FFFF00 (amarelo) ou #FF9900 (laranja)
     }
 
     &.senior {
-      background-color: #000066; //Senior: #000066 (azul-escuro) ou #006600 (verde-escuro)
+      background: linear-gradient(
+        135deg,
+        #0000df 0%,
+        #00003e 100%
+      ); //Senior: #000066 (azul-escuro) ou #006600 (verde-escuro)
     }
 
     &.master {
-      background-color: #702a70; //Master: #702a70 (roxo) ou #990000 (vermelho-escuro)
+      background: linear-gradient(
+        135deg,
+        #b545b5 0%,
+        #3c173c 100%
+      ); //Master: #702a70 (roxo) ou #990000 (vermelho-escuro)
     }
 
     &.specialist {
-      background-color: #ff0000; //Especialista: #FF0000 (vermelho) ou #006600 (verde)
+      background: linear-gradient(
+        135deg,
+        #ff0000 0%,
+        #410000 100%
+      ); //Especialista: #FF0000 (vermelho) ou #006600 (verde)
     }
   }
 }
@@ -64,10 +87,10 @@ li {
   padding: 2px 5px;
   border-radius: 10px;
   &:hover {
-    background-color: #fff;
+    background-color: var(--line-background-hover-color);
     position: relative;
     top: -1px;
     left: -1px;
-    box-shadow: 1px 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px 1px var(--line-boxshadow-hover-color);
   }
 }

@@ -1,8 +1,11 @@
+:root,
 :root .light-theme {
   // light theme
   --primary-base-color: #eee;
   --background-color: #eee;
   --container-background: #ddd;
+  --line-background-hover-color: #fff;
+  --line-boxshadow-hover-color: #ccc;
   --card-container-background: #eee;
   --primary-text-color: #3d405b;
 }
@@ -12,10 +15,13 @@
   --primary-base-color: #161616;
   --background-color: #161616;
   --container-background: #2f2f2f;
+  --line-background-hover-color: #4f4f4f;
+  --line-boxshadow-hover-color: #7a7a7a;
   --card-container-background: #1d1d1d;
   --primary-text-color: #ccc;
 }
 
+:root,
 :root .purple {
   // purple
   --secondary-base-color: #702a70;

@@ -18,7 +18,7 @@ li {
     display: inline-block;
     width: 8px;
     height: 8px;
-    border: solid 4px #3d405b;
+    border: solid 4px var(--primary-text-color);
     border-radius: 50%;
     margin-right: 10px;
     margin-left: 6px;
@@ -29,7 +29,7 @@ li {
     left: 0;
     width: 0px;
     height: 42px;
-    border: solid 2px #3d405b;
+    border: solid 2px var(--primary-text-color);
     margin-left: 12px;
     top: 16px;
   }

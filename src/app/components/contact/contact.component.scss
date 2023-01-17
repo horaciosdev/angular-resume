@@ -1,47 +1,41 @@
-li{
-    position: relative;
-    transition: .3s;
-    top: 0;
-    left: 0;
+li {
+  position: relative;
+  transition: 0.3s;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
+  line-height: 1;
+  padding: 3px;
+  margin: 5px 0;
+  border-radius: 10px;
+  .icon {
+    margin-right: 5px;
+    transition: 0.2s;
     vertical-align: middle;
-    line-height: 1;
-    padding: 3px;
-    margin: 5px 0;
-    border-radius: 10px;
-    .icon{        
-        margin-right: 5px;
-        transition: .2s;
-        vertical-align: middle;
+  }
+  font-size: 1rem;
+
+  &:hover {
+    left: -3px;
+    cursor: default;
+    background-color: var(--line-background-hover-color);
+
+    .contact {
+      text-align: center;
     }
-    font-size: 1rem;
 
-  
-    &:hover{
-        left: -3px;
-        cursor: default;
-        background-color: #fff;        
-
-        .contact{
-            text-align: center;
-        }
-
-        .icon{
-            transform: rotateY(-360deg);
-        }
-
-        .whatsapp{
-            color: #25D366;
-        }
-        .email{
-            color: #d8493f
-        }
-        .location{
-            color:#0ca8e9;
-        }
+    .icon {
+      transform: rotateY(-360deg);
     }
+
+    .whatsapp {
+      color: #25d366;
+    }
+    .email {
+      color: #d8493f;
+    }
+    .location {
+      color: #0ca8e9;
+    }
+  }
 }
-
-
-
-
-

@@ -50,4 +50,5 @@ export interface Skills {
 export interface Interest {
   icon: string;
   interest: string;
+  url: string;
 }

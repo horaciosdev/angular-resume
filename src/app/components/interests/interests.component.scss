@@ -1,3 +1,29 @@
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.is-link {
+  position: absolute;
+  right: 20px;
+  bottom: 26px;
+  font-size: 0.7rem;
+  animation: swing 1s ease infinite;
+}
+
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -7,6 +33,7 @@ ul {
   margin-top: -10px;
 }
 li {
+  position: relative;
   text-align: center;
   width: 90px;
 

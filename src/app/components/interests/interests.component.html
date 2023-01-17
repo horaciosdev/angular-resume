@@ -2,8 +2,20 @@
   <app-card-header [iconName]="'star'" title="Interests"></app-card-header>
   <ul>
     <li *ngFor="let interest of resume.interests">
-      <div class="icon"><app-icon [iconName]="interest.icon"></app-icon></div>
-      <div>{{ interest.interest }}</div>
+      <a
+        *ngIf="interest.url; else noLink"
+        class="interest-link"
+        href="{{ interest.url }}"
+        target="_blank"
+      >
+        <div class="is-link"><app-icon [iconName]="'link'"></app-icon></div>
+        <div class="icon"><app-icon [iconName]="interest.icon"></app-icon></div>
+        <div>{{ interest.interest }}</div>
+      </a>
+      <ng-template #noLink>
+        <div class="icon"><app-icon [iconName]="interest.icon"></app-icon></div>
+        <div>{{ interest.interest }}</div>
+      </ng-template>
     </li>
   </ul>
 </div>

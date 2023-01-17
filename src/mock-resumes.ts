@@ -6,11 +6,11 @@ export const RESUMES: Resume[] = [
     name: 'Horacio Schumann',
     photoUrl: 'https://avatars.githubusercontent.com/u/29050661?v=4',
     role: 'Angular Front-end',
-    about: `Hello! My name is Horácio and I am a programmer.
-            Since I was a child, I have always been very curious and enjoyed learning new things.
-            This led me to have an interest in various areas such as technology, science, and art.
-            In addition, I am very dedicated and committed to everything I do.
-            I believe that learning, experience, and critical thinking are fundamental for personal and professional growth, and I am always open to new opportunities for growth.`,
+    about: `My name is Horacio and I'm a programmer.
+            From an early age, I was always curious and enjoyed learning new things.
+            This led me to explore various areas such as technology, science, and art.
+            I am dedicated and committed to everything I do and believe that continuous learning, experience, and critical thinking are fundamental for personal and professional growth.
+            I am always looking for new opportunities to grow and evolve.`,
     contacts: [
       {
         icon: 'whatsapp',
@@ -120,12 +120,16 @@ export const RESUMES: Resume[] = [
       },
     ],
     interests: [
-      { icon: 'brush', interest: '2D Art' },
-      { icon: 'cube', interest: '3D Art' },
-      { icon: 'pcmusic', interest: 'Music / SFX' },
-      { icon: 'joystick', interest: 'Game Dev' },
-      { icon: 'camera', interest: 'Photography' },
-      { icon: 'phi', interest: 'Philosophy' },
+      { icon: 'brush', interest: '2D Art', url: '' },
+      {
+        icon: 'cube',
+        interest: '3D Art',
+        url: 'https://www.deviantart.com/hor4cles',
+      },
+      { icon: 'pcmusic', interest: 'Music / SFX', url: '' },
+      { icon: 'joystick', interest: 'Game Dev', url: '' },
+      { icon: 'camera', interest: 'Photography', url: '' },
+      { icon: 'phi', interest: 'Philosophy', url: '' },
     ],
   },
 ];

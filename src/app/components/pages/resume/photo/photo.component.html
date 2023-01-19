@@ -1,3 +1,9 @@
 <div class="card-container photo-container">
-  <img src="{{ resume.image }}" alt="{{ resume.name }}" />
+  <img [src]="resume.image" alt="{{ resume.name }}" />
+  <span class="no-print">
+    <input #imageInput type="file" [ngStyle]="{ display: 'none' }" (change)="changeImage(imageInput)"/>
+    <span class="input-icon">
+      <app-icon [iconName]="'camera'" (click)="imageInput.click()"></app-icon>
+    </span>
+  </span>
 </div>

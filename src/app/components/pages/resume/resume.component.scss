@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .menu {
@@ -54,6 +55,10 @@
   }
 }
 
+.header {
+  margin-bottom: 10px;
+  min-width: 300px;
+}
 .side {
   grid-area: side;
 }
@@ -72,14 +77,17 @@
     "side main main"
     "footer footer footer";
   gap: 10px;
-  padding: 10px;
   max-width: 1024px;
   min-width: 300px;
 }
 
 @media (max-width: 680px) {
   .resume {
-    display: block;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "side"
+      "main"
+      "footer";
   }
 }
 

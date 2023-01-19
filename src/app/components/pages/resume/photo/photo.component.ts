@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { FileExistsService } from 'src/app/services/file-exists.service';
 import { environment } from 'src/app/environments/environment';
-import { Resume } from '../Resume';
+import { Resume } from 'src/app/components/Resume';
 
 @Component({
   selector: 'app-photo',

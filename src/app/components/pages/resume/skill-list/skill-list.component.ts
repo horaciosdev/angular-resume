@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Skill } from '../Resume';
+import { Skill } from 'src/app/components/Resume'; 
 @Component({
   selector: 'app-skill-list',
   templateUrl: './skill-list.component.html',

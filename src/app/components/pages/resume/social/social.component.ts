@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Resume } from '../Resume'; 
+import { Resume } from '../../../Resume';
 
 @Component({
   selector: 'app-social',

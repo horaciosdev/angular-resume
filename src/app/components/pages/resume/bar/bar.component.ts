@@ -1,4 +1,4 @@
-import { Component, Input, ElementRef, ViewChild } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {
   state,
   trigger,
@@ -20,8 +20,7 @@ const end = state(
     width: '{{newPercent}}%',
   }),
   { params: { newPercent: '0%', duration: '1' } }
- );
- 
+);
 
 const fillBar = trigger('fillBar', [
   start,

@@ -14,14 +14,14 @@ export class PhotoComponent {
 
   constructor(private fileExistsService: FileExistsService) {}
 
-  ngOnInit(): void {    
-    this.loadImage(this.resume.photoUrl);
+  ngOnInit(): void {
+    this.loadImage(this.resume.image);
   }
 
   loadImage(url: string): void {
     this.fileExistsService.checkFileExists(url).subscribe((fileExists) => {
       if (!fileExists) {
-        this.resume.photoUrl = `${this.baseApiUrl}assets/image/default.png`;
+        this.resume.image = `${this.baseApiUrl}assets/image/default.png`;
       }
     });
   }

@@ -47,3 +47,10 @@ li {
     margin-left: 33px;
   }
 }
+
+@media (max-width: 1000px)
+{
+  .experiences {    
+    grid-template-columns: 1fr;
+  }
+}

@@ -94,3 +94,17 @@ li {
     box-shadow: 1px 1px 1px 1px var(--line-boxshadow-hover-color);
   }
 }
+
+
+@media (max-width: 850px)
+{  
+  .skill-name {
+    display: block;    
+  }
+  .bar{
+    width: calc(100% - 100px);
+  }
+  li{
+    margin-bottom: 5px;
+  }
+}

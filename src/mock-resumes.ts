@@ -4,7 +4,7 @@ export const RESUMES: Resume[] = [
   {
     id: 1,
     name: 'Horacio Schumann',
-    photoUrl: 'https://avatars.githubusercontent.com/u/29050661?v=4',
+    image: 'https://avatars.githubusercontent.com/u/29050661?v=4',
     role: 'Angular Front-end',
     about: `My name is Horacio and I'm a programmer.
             From an early age, I was always curious and enjoyed learning new things.
@@ -131,5 +131,17 @@ export const RESUMES: Resume[] = [
       { icon: 'camera', interest: 'Photography', url: '' },
       { icon: 'phi', interest: 'Philosophy', url: '' },
     ],
+  },
+  {
+    id: 2,
+    name: 'Fulaninho',
+    image: '',
+    role: 'Angular Front-end',
+    about: ``,
+    contacts: [],
+    follows: [],
+    experiences: [],
+    skills: [],
+    interests: [],
   },
 ];

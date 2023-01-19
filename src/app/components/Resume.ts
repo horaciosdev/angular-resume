@@ -1,9 +1,9 @@
 export interface Resume {
   id?: number;
   name: string;
-  photoUrl: string;
+  image: string;
   role: string;
-  about: string;
+  about?: string;
   contacts: Contact[];
   follows: Follow[];
   experiences: Experience[];

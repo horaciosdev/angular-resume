@@ -1,40 +1,51 @@
 <div class="container">
-  <div class="resume">
-    <div class="header no-print">
-      <div class="content">
-        <div class="card-container">
-          <div class="menu">
-            <button
-              *ngFor="let resumeItem of resumeList"
-              (click)="selectResume(resumeItem.id!)"
-              [ngClass]="{
-                selected: resumeItem.id === resume.id ? true : false
-              }"
-            >
-              <a routerLink="/resume/{{ resumeItem.id }}">
-                {{ resumeItem.name }}
-              </a>
-            </button>
-            <button (click)="addResume()">
-              <span class="icon"
-                ><app-icon [iconName]="'plus'"></app-icon
-              ></span>
-            </button>
-          </div>
+  <div class="header no-print">
+    <div class="content">
+      <div class="card-container">
+        <div class="menu">
+          <button
+            *ngFor="let resumeItem of resumeList"
+            (click)="selectResume(resumeItem.id!)"
+            [ngClass]="{
+              selected: resumeItem.id === resume.id ? true : false
+            }"
+          >
+            <a routerLink="/resume/{{ resumeItem.id }}">
+              {{ resumeItem.name }}
+            </a>
+          </button>
+          <button (click)="addResume()">
+            <span class="icon"><app-icon [iconName]="'plus'"></app-icon></span>
+          </button>
         </div>
       </div>
     </div>
+  </div>
+  <div *ngIf="resume" class="resume">
     <div class="side">
       <div class="content">
-        <app-sidebar [resume]="resume"></app-sidebar>
+        <div class="sidebar">
+          <app-photo *ngIf="resume.image" [resume]="resume"></app-photo>
+          <app-name-tag [resume]="resume"></app-name-tag>
+          <app-about *ngIf="resume.about" [resume]="resume"></app-about>
+          <app-social
+            *ngIf="resume.follows.length"
+            [resume]="resume"
+          ></app-social>
+          <app-contact
+            *ngIf="resume.contacts.length"
+            [resume]="resume"
+          ></app-contact>
+        </div>
       </div>
     </div>
     <div class="main">
       <div class="content">
-        <app-main-content [resume]="resume"></app-main-content>
+        <app-experience [resume]="resume"></app-experience>
+        <app-skills [resume]="resume"></app-skills>
       </div>
     </div>
-    <div class="footer">
+    <div class="footer" *ngIf="resume.interests.length">
       <div class="content">
         <app-interests [resume]="resume"></app-interests>
       </div>

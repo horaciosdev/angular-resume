@@ -1,4 +1,25 @@
 <div class="card-container name-tag">
-  <h1 class="name">{{ resume.name }}</h1>
-  <p class="role">{{ resume.role }}</p>
+  <h1
+    class="name"
+    #nameInput
+    contentEditable
+    spellcheck="false"
+    (keydown)="blur($event, nameInput)"
+    (blur)="changeValue(nameInput, 'name')"
+  >
+    {{ resume.name }}
+  </h1>
+  <p
+    class="role"
+    #roleInput
+    contentEditable
+    spellcheck="false"
+    (keydown)="blur($event, roleInput)"
+    (blur)="changeValue(roleInput, 'role')"
+  >
+    {{ resume.role }}
+  </p>
+  <span class="edit-icon no-print" (click)="setFocus()">
+    <app-icon [iconName]="'edit'"></app-icon>
+  </span>
 </div>

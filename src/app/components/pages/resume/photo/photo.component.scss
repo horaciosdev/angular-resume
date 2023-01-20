@@ -9,19 +9,3 @@ img {
   box-shadow: 0 0 2px 1px #ddd;
   object-fit: contain;
 }
-
-.input-icon {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  cursor: pointer;
-  padding: 5px;
-  border: solid 1px var(--primary-text-color);
-  background-color: var(--container-background);
-  border-radius: 50%;
-  &:hover {
-    scale: 1.1;
-    color: #ccc;
-    background-color: var(--hover-color);
-  }
-}

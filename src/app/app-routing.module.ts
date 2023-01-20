@@ -3,9 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { ResumeComponent } from './components/pages/resume/resume.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'resume/1', pathMatch: 'full' },
+  { path: '', redirectTo: 'resume/', pathMatch: 'full' },
   { path: 'resume/:id', component: ResumeComponent },
-  { path: '**', redirectTo: 'resume/1' },
+  { path: '**', redirectTo: 'resume/' },
 ];
 
 @NgModule({

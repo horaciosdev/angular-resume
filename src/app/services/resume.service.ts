@@ -13,9 +13,24 @@ export class ResumeService {
   constructor(private router: Router) {}
 
   addResume(): Observable<Resume[]> {
-    let newResume = { ...this.resumeList[this.resumeList.length - 1] };
-    let newId = newResume.id! + 1;
-    newResume.id = newId;
+    let newId = 1;
+    if (this.resumeList.length) {
+      newId = this.resumeList[this.resumeList.length - 1].id! + 1;
+    }
+
+    const newResume = {
+      id: newId,
+      name: 'Fulaninho',
+      image: '',
+      role: 'Angular Front-end',
+      about: ``,
+      contacts: [],
+      follows: [],
+      experiences: [],
+      skills: [],
+      interests: [],
+    };
+
     this.resumeList = [...this.resumeList, newResume];
 
     return of(this.resumeList);

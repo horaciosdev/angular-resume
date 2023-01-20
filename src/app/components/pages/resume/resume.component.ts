@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ResumeService } from 'src/app/services/resume.service';
 import { Resume } from '../../Resume';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ConnectableObservable } from 'rxjs';
 
 @Component({
   selector: 'app-resume',
@@ -20,8 +21,19 @@ export class ResumeComponent {
 
   ngOnInit(): void {
     this.getResumeList();
-    const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
-    this.getResume(id);
+    if (this.resumeList.length) {
+      let id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
+      if (!id) {
+        if (this.resumeList[0].id) {
+          id = this.resumeList[0].id;
+        }
+      }
+
+      this.getResume(id);
+      this.router.navigate(['/resume', id]);
+    } else {
+      this.router.navigate(['/resume']);
+    }
   }
 
   getResume(id: number): void {
@@ -33,7 +45,6 @@ export class ResumeComponent {
     this.resumeService
       .getResume(id)
       .subscribe((resume) => (this.resume = resume));
-    this.router.navigate(['/resume']);
   }
 
   getResumeList(): void {
@@ -49,7 +60,7 @@ export class ResumeComponent {
   addResume(): void {
     this.resumeService.addResume().subscribe((response) => {
       this.resumeList = response;
-      this.resume = this.resumeList[this.resumeList.length-1];
+      this.resume = this.resumeList[this.resumeList.length - 1];
     });
   }
 }

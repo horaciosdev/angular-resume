@@ -133,7 +133,7 @@ export const RESUMES: Resume[] = [
   //   ],
   // },
   {
-    id: 1,
+    id: 2,
     name: 'Fulaninho',
     image: '',
     role: 'Angular Front-end',

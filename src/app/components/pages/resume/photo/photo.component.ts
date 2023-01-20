@@ -1,4 +1,4 @@
-import { Component, Input, SecurityContext } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FileExistsService } from 'src/app/services/file-exists.service';
 import { environment } from 'src/app/environments/environment';
 import { Resume } from 'src/app/components/Resume';
@@ -33,8 +33,6 @@ export class PhotoComponent {
   }
 
   changeImage(imageInput: HTMLInputElement): void {
-    console.log(URL.createObjectURL(imageInput.files![0]));
-
     this.resume.image = this.sanitizer.bypassSecurityTrustResourceUrl(
       URL.createObjectURL(imageInput.files![0])
     ) as string;

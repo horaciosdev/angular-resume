@@ -11,7 +11,7 @@
             }"
           >
             <a routerLink="/resume/{{ resumeItem.id }}">
-              {{ resumeItem.name }}
+              {{ resumeItem.name }} ({{ resumeItem.id }})
             </a>
           </button>
           <button (click)="addResume()">

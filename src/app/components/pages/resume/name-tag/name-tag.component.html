@@ -4,7 +4,7 @@
     #nameInput
     contentEditable
     spellcheck="false"
-    (keydown)="blur($event, nameInput)"
+    (keydown)="blur($event, nameInput, 'name')"
     (blur)="changeValue(nameInput, 'name')"
   >
     {{ resume.name }}
@@ -14,12 +14,15 @@
     #roleInput
     contentEditable
     spellcheck="false"
-    (keydown)="blur($event, roleInput)"
+    (keydown)="blur($event, roleInput, 'role')"
     (blur)="changeValue(roleInput, 'role')"
   >
     {{ resume.role }}
   </p>
-  <span class="edit-icon no-print" (click)="setFocus()">
+  <span
+    class="edit-icon no-print"
+    (click)="focusChanger([nameInput, roleInput])"
+  >
     <app-icon [iconName]="'edit'"></app-icon>
   </span>
 </div>

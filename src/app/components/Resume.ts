@@ -3,12 +3,17 @@ export interface Resume {
   name: string;
   image: string;
   role: string;
-  about?: string;
+  about: About;
   contacts: Contact[];
   follows: Follow[];
   experiences: Experience[];
   skills: Skills[];
   interests: Interest[];
+}
+
+export interface About {
+  title: string;
+  aboutText: string;
 }
 
 export interface Contact {

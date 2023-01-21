@@ -20,10 +20,13 @@ export class ResumeService {
 
     const newResume = {
       id: newId,
-      name: 'Fulaninho',
+      name: 'Type your name',
       image: '',
-      role: 'Angular Front-end',
-      about: ``,
+      role: 'Type your role',
+      about: {
+        title: 'About me:',
+        aboutText: `Type something about you.`,
+      },
       contacts: [],
       follows: [],
       experiences: [],

@@ -1,6 +1,26 @@
 <div class="about card-container">
-  <h2>{{ resume.about.title }}</h2>
-  <p>
+  <h2
+    #titleInput
+    contentEditable
+    spellcheck="false"
+    (keydown)="onKeyDown($event, titleInput, 'title')"
+    (blur)="onBlur(titleInput, 'title')"
+  >
+    {{ resume.about.title }}
+  </h2>
+  <p
+    #aboutTextInput
+    contentEditable
+    spellcheck="false"
+    (keydown)="onKeyDown($event, aboutTextInput, 'aboutText')"
+    (blur)="onBlur(aboutTextInput, 'aboutText')"
+  >
     {{ resume.about.aboutText }}
   </p>
+  <span
+    class="edit-icon no-print"
+    (click)="focusChanger([titleInput, aboutTextInput])"
+  >
+    <app-icon [iconName]="'edit'"></app-icon>
+  </span>
 </div>

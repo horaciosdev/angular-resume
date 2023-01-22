@@ -11,19 +11,25 @@ export class NameTagComponent {
   focusIndex: number = 0;
 
   @HostListener('document.keydown', ['$event'])
-  blur(event: KeyboardEvent, element: HTMLElement, variableName: 'name' | 'role') {
+  blur(event: KeyboardEvent, element: HTMLElement, variableName: string) {
+    type KeyIndex = keyof Resume;
+    let key: KeyIndex = variableName as keyof Resume;
+
     if (event.key === 'Enter') {
       event.preventDefault();
       element.blur();
     }
     if (event.key === 'Escape') {
-      element.innerText = this.resume[variableName];
+      element.innerText = this.resume[key] as string;
       this.setCursorToEnd(element);
     }
   }
 
-  changeValue(element: HTMLElement, variableName: 'name' | 'role'): void {
-    this.resume[variableName] = element.innerText.trim();
+  onBlur(element: HTMLElement, variableName: string): void {
+    type KeyIndex = keyof Resume;
+    let key: KeyIndex = variableName as keyof Resume;
+
+    this.resume[key] = element.innerText.trim() as never;
   }
 
   setCursorToEnd(el: HTMLElement) {

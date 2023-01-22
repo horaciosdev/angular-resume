@@ -5,7 +5,7 @@
     contentEditable
     spellcheck="false"
     (keydown)="blur($event, nameInput, 'name')"
-    (blur)="changeValue(nameInput, 'name')"
+    (blur)="onBlur(nameInput, 'name')"
   >
     {{ resume.name }}
   </h1>
@@ -15,7 +15,7 @@
     contentEditable
     spellcheck="false"
     (keydown)="blur($event, roleInput, 'role')"
-    (blur)="changeValue(roleInput, 'role')"
+    (blur)="onBlur(roleInput, 'role')"
   >
     {{ resume.role }}
   </p>

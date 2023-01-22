@@ -20,12 +20,12 @@ export class ResumeService {
 
     const newResume = {
       id: newId,
-      name: 'Type your name',
+      name: 'Your Name',
       image: '',
-      role: 'Type your role',
+      role: 'Your Role',
       about: {
         title: 'About me:',
-        aboutText: `Type something about you.`,
+        aboutText: `Something about you.`,
       },
       contacts: [],
       follows: [],
@@ -50,4 +50,7 @@ export class ResumeService {
   getResumeList(): Observable<Resume[]> {
     return of(this.resumeList);
   }
+
+
+  
 }

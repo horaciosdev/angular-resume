@@ -1,5 +1,6 @@
 import { Component, HostListener, Input } from '@angular/core';
 import { Resume } from 'src/app/components/Resume';
+import { ContentEditableService } from 'src/app/services/content-editable.service';
 
 @Component({
   selector: 'app-name-tag',
@@ -8,12 +9,13 @@ import { Resume } from 'src/app/components/Resume';
 })
 export class NameTagComponent {
   @Input() resume!: Resume;
-  focusIndex: number = 0;
+
+  constructor(private contentEditable: ContentEditableService) {}
 
   @HostListener('document.keydown', ['$event'])
-  blur(event: KeyboardEvent, element: HTMLElement, variableName: string) {
+  onKeyDown(event: KeyboardEvent, element: HTMLElement, variableName: string) {
     type KeyIndex = keyof Resume;
-    let key: KeyIndex = variableName as keyof Resume;
+    const key: KeyIndex = variableName as keyof Resume;
 
     if (event.key === 'Enter') {
       event.preventDefault();
@@ -21,36 +23,17 @@ export class NameTagComponent {
     }
     if (event.key === 'Escape') {
       element.innerText = this.resume[key] as string;
-      this.setCursorToEnd(element);
+      element.blur();
     }
   }
 
   onBlur(element: HTMLElement, variableName: string): void {
     type KeyIndex = keyof Resume;
-    let key: KeyIndex = variableName as keyof Resume;
-
+    const key: KeyIndex = variableName as keyof Resume;
     this.resume[key] = element.innerText.trim() as never;
   }
 
-  setCursorToEnd(el: HTMLElement) {
-    const range = document.createRange();
-    range.selectNodeContents(el);
-    range.collapse(false);
-    const sel = window.getSelection()!;
-    sel.removeAllRanges();
-    sel.addRange(range);
-  }
-
   focusChanger(elements: HTMLElement[]): void {
-    if (elements.length) {
-      if (elements.length == this.focusIndex) {
-        this.focusIndex = 0;
-      }
-
-      const element = elements[this.focusIndex];
-      element.focus();
-      this.setCursorToEnd(element);
-      this.focusIndex++;
-    }
+    this.contentEditable.focusChanger(elements);
   }
 }

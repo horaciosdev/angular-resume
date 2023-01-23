@@ -1,3 +1,5 @@
+import { SocialComponent } from './pages/resume/social/social.component';
+
 export interface Resume {
   id?: number;
   name: string;
@@ -5,7 +7,7 @@ export interface Resume {
   role: string;
   about: About;
   contacts: Contact[];
-  follows: Follow[];
+  social: Social;
   experiences: Experience[];
   skills: Skills[];
   interests: Interest[];
@@ -14,6 +16,11 @@ export interface Resume {
 export interface About {
   title: string;
   aboutText: string;
+}
+
+export interface Social {
+  title: string;
+  follows: Follow[];
 }
 
 export interface Contact {

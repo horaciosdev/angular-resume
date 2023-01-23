@@ -10,20 +10,29 @@
     }
   }
 
-  .follow-icon {
-    color: #fff;
-    background: var(--background-gradient-theme-color);
-    border-radius: 5px;
-    font-size: 1.8rem;
-    vertical-align: middle;
-    padding: 4px;
-    transition: 0.3s;
-    &:hover {
-      color: var(--hover-color) !important;
-      background: #fff;
-      box-shadow: 0 0 3px 1px var(--hover-color);
+  .social-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    .follow-icon {
+      display: block;
+      color: #fff;
+      background: var(--background-gradient-theme-color);
+      border-radius: 5px;
+      font-size: 1.8rem;
+      padding: 4px;
+      transition: 0.3s;
+      &:hover {
+        color: var(--hover-color) !important;
+        background: #fff;
+        box-shadow: 0 0 3px 1px var(--hover-color);
+      }
     }
   }
+
   .print-link {
     display: none;
   }

@@ -31,23 +31,26 @@ export const RESUMES: Resume[] = [
         contact: 'Porto Alegre/RS',
       },
     ],
-    follows: [
-      {
-        icon: 'github',
-        title: 'Github',
-        link: 'https://github.com/horaciosdev',
-      },
-      {
-        icon: 'linkedin',
-        title: 'Linkedin',
-        link: 'https://www.linkedin.com/in/horaciosdev/',
-      },
-      {
-        icon: 'instagram',
-        title: 'Instagram',
-        link: 'https://www.instagram.com/bagreheads/',
-      },
-    ],
+    social: {
+      title: 'Social Media:',
+      follows: [
+        {
+          icon: 'github',
+          title: 'Github',
+          link: 'https://github.com/horaciosdev',
+        },
+        {
+          icon: 'linkedin',
+          title: 'Linkedin',
+          link: 'https://www.linkedin.com/in/horaciosdev/',
+        },
+        {
+          icon: 'instagram',
+          title: 'Instagram',
+          link: 'https://www.instagram.com/bagreheads/',
+        },
+      ],
+    },
     experiences: [
       {
         icon: 'suitcase',
@@ -145,7 +148,10 @@ export const RESUMES: Resume[] = [
       aboutText: 'Type something about you.',
     },
     contacts: [],
-    follows: [],
+    social: {
+      title: '',
+      follows: [],
+    },
     experiences: [],
     skills: [],
     interests: [],

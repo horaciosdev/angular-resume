@@ -28,7 +28,10 @@ export class ResumeService {
         aboutText: `Something about you.`,
       },
       contacts: [],
-      follows: [],
+      social: {
+        title: '',
+        follows: [],
+      },
       experiences: [],
       skills: [],
       interests: [],
@@ -50,7 +53,4 @@ export class ResumeService {
   getResumeList(): Observable<Resume[]> {
     return of(this.resumeList);
   }
-
-
-  
 }

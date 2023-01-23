@@ -25,22 +25,6 @@ a {
   text-decoration: none;
 }
 
-.edit-icon {
-  cursor: pointer;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  padding: 5px;
-  border: solid 1px var(--primary-text-color);
-  background-color: var(--container-background);
-  border-radius: 50%;
-  &:hover {
-    scale: 1.1;
-    color: #ccc;
-    background-color: var(--hover-color);
-  }
-}
-
 .inlineblock {
   display: inline-block;
 }
@@ -88,6 +72,34 @@ ul {
 .icon {
   display: inline-block;
   vertical-align: middle;
+}
+
+.edit-icon {
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px;
+  border: solid 1px var(--primary-text-color);
+  background-color: var(--container-background);
+  border-radius: 50%;
+  &:hover {
+    scale: 1.1;
+    color: #ccc;
+    background-color: var(--hover-color);
+  }
+}
+
+.trash-icon {
+  cursor: pointer;
+  padding: 5px;
+  border: solid 1px var(--primary-text-color);
+  background-color: var(--container-background);
+  &:hover {
+    scale: 1.1;
+    color: #ccc;
+    background-color: var(--hover-color);
+  }
 }
 
 .content {

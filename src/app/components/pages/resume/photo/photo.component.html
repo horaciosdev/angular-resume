@@ -6,9 +6,7 @@
       type="file"
       [ngStyle]="{ display: 'none' }"
       (change)="changeImage(imageInput)"
-    />
-    <span class="edit-icon" (click)="imageInput.click()">
-      <app-icon [iconName]="'camera'"></app-icon>
-    </span>
+    />    
+    <app-icon [iconName]="'camera'" class="edit-icon" (click)="imageInput.click()"></app-icon>    
   </span>
 </div>

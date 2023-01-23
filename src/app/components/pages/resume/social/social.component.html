@@ -1,14 +1,27 @@
 <div class="social card-container">
-  <h2>Follow:</h2>
+  <h2
+    #titleInput
+    contentEditable
+    spellcheck="false"
+    (keydown)="onKeyDown($event, titleInput, 'title')"
+    (blur)="onBlur(titleInput, 'title')"
+  >
+    {{ resume.social.title }}
+  </h2>
   <div class="follow-links-container">
-    <span class="follow-links" *ngFor="let follow of resume.follows">
-      <a
-        class="follow-icon"
-        target="_blank"
-        href="{{ follow.link }}"
-        title="{{ follow.title }}"
-        ><app-icon [iconName]="follow.icon"></app-icon
-      ></a>
+    <span class="follow-links" *ngFor="let follow of resume.social.follows">
+      <div class="social-item">
+        <a
+          class="follow-icon"
+          target="_blank"
+          href="{{ follow.link }}"
+          title="{{ follow.title }}"
+          ><app-icon [iconName]="follow.icon"></app-icon
+        ></a>
+        <span class="no-print trash-icon">
+          <app-icon [iconName]="'trash'"></app-icon>
+        </span>
+      </div>
 
       <a
         class="print-link"
@@ -19,4 +32,7 @@
       >
     </span>
   </div>
+  <span class="no-print edit-icon" (click)="focusChanger([titleInput])">
+    <app-icon [iconName]="'edit'"></app-icon>
+  </span>
 </div>

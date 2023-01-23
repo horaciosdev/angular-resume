@@ -29,7 +29,7 @@
           <app-name-tag [resume]="resume"></app-name-tag>
           <app-about *ngIf="resume.about" [resume]="resume"></app-about>
           <app-social
-            *ngIf="resume.follows.length"
+            *ngIf="resume.social.follows.length"
             [resume]="resume"
           ></app-social>
           <app-contact
